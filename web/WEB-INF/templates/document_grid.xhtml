@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <p:dataGrid var="doc" value="#{documentsController.getDocuments(Group)}" columns="3"
+                        rows="12" paginator="true" effect="true"
+                        paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                        rowsPerPageTemplate="9,12,15">
+                
+                <p:column>
+                    <p:panel header="#{doc.title}" style="text-align:center">
+                        <h:panelGrid columns="1" style="width:100%; text-align:left">
+                            <h:outputText value="#{doc.description}"/>
+                            <p:commandLink update=":form:carDetail" oncomplete="carDialog.show()" title="View Detail">
+                                <p:graphicImage value="#{resource['images/viewDetail.png']}"/> 
+                                <f:setPropertyActionListener value="#{doc}" target="#{documentsController.selectedDoc}" />
+                            </p:commandLink>
+                            <h:link outcome="Document.xhtml" value="View">
+                                <f:param name="id" value="#{doc.id}"/>
+                            </h:link>
+                            <p:commandLink action="#{documentController.openDocuments}">
+                                <h:outputText value="Open"/>
+                                <p:graphicImage value="#{resource['images/DocumentFolder.png']}"/> 
+                                <f:setPropertyActionListener target="#{documentController.tester}" value="here"/>
+                            </p:commandLink>
+                        </h:panelGrid>
+                    </p:panel>
+                </p:column>
+
+            </p:dataGrid>
+
+            <p:dialog header="Car Detail" widgetVar="carDialog" modal="true">
+                <p:outputPanel id="carDetail" style="text-align:center;" layout="block">
+
+                    <p:graphicImage value="/images/cars/#{documentsController.selectedDoc.description}.jpg"/>
+
+                    <h:panelGrid  columns="2" cellpadding="5">
+                        <h:outputLabel for="date" value="Date Created: " />
+                        <h:outputText id="date" value="#{documentsController.selectedDoc.created}" />
+
+                        <h:outputLabel for="pages" value="# of Pages: " />
+                        <h:outputText id="pages" value="#{documentsController.selectedDoc.pages}" />
+
+                    </h:panelGrid>
+                </p:outputPanel>
+            </p:dialog>
+
+        </h:form>
+
+    </h:body>
+</html>
+

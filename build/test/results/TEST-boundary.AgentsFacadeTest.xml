@@ -1,0 +1,1526 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="9" failures="0" hostname="alan-System-Product-Name" name="boundary.AgentsFacadeTest" tests="9" time="33.136" timestamp="2012-02-13T23:08:45">
+  <properties>
+    <property name="libs.jsp-compiler.javadoc" value="" />
+    <property name="netbeans.autoupdate.country" value="US" />
+    <property name="javac.test.classpath" value="lib/commons-codec-1.6-bin.zip:lib/commons-codec-1.6.jar:lib/log4j-1.2.15.jar:/home/alan/Dropbox/Projects/REM/lib/PrimeFaces3.0/primefaces-3.0.RC2.jar:/home/alan/Dropbox/Projects/REM/lib/MySQLDriver/mysql-connector-java-5.1.13-bin.jar:lib/commons-fileupload-1.2.2.jar:lib/commons-io-2.1.jar:lib/derbyclient.jar:lib/derby.jar:build/web/WEB-INF/classes:/home/alan/Dropbox/Projects/REM/lib/junit_4/junit-4.8.2.jar:/home/alan/Dropbox/Projects/REM/lib/MySQLDriver/mysql-connector-java-5.1.13-bin.jar:lib/derby.jar" />
+    <property name="libs.jsf20.maven-pom" value="" />
+    <property name="source.root" value="." />
+    <property name="do.display.browser" value="true" />
+    <property name="libs.junit.javadoc" value="/home/alan/Dropbox/Projects/REM/lib/junit/junit-3.8.2-api.zip" />
+    <property name="javac.includes" value="boundary/AgentsFacadeTest.java" />
+    <property name="ant.core.lib" value="/usr/local/netbeans-7.1/java/ant/lib/ant.jar" />
+    <property name="file.reference.commons-fileupload-1.2.2.jar" value="lib/commons-fileupload-1.2.2.jar" />
+    <property name="libs.ApacheCommonsCodec.type" value="serverlibrary" />
+    <property name="javadoc.windowtitle" value="" />
+    <property name="libs.toplink.classpath" value="/usr/local/netbeans-7.1/java/modules/ext/toplink/toplink-essentials.jar:/usr/local/netbeans-7.1/java/modules/ext/toplink/toplink-essentials-agent.jar" />
+    <property name="libs.jsp-compilation.javadoc" value="" />
+    <property name="user.dir" value="/home/alan/Dropbox/Projects/REM" />
+    <property name="libs.hibernate-persistence.javadoc" value="" />
+    <property name="java.vm.version" value="20.0-b11" />
+    <property name="libs.jstl11.maven-pom" value="" />
+    <property name="libs.Java-EE-GlassFish-v3.wsimport" value="" />
+    <property name="libs.MySQLDriver.classpath" value="/home/alan/Dropbox/Projects/REM/lib/MySQLDriver/mysql-connector-java-5.1.13-bin.jar" />
+    <property name="libs.eclipselinkmodelgen.src" value="" />
+    <property name="libs.jstl11.src" value="" />
+    <property name="javadoc.notree" value="false" />
+    <property name="lib.dir" value="lib" />
+    <property name="netbeans.autoupdate.version" value="1.23" />
+    <property name="file.reference.commons-io-2.1.jar" value="lib/commons-io-2.1.jar" />
+    <property name="libs.EclipseLink-GlassFish-v3.classpath" value="/home/alan/Java/glassfish3/glassfish/modules/org.eclipse.persistence.antlr.jar:/home/alan/Java/glassfish3/glassfish/modules/org.eclipse.persistence.asm.jar:/home/alan/Java/glassfish3/glassfish/modules/org.eclipse.persistence.oracle.jar:/home/alan/Java/glassfish3/glassfish/modules/org.eclipse.persistence.jpa.jar:/home/alan/Java/glassfish3/glassfish/modules/org.eclipse.persistence.jpa.modelgen.jar:/home/alan/Java/glassfish3/glassfish/modules/org.eclipse.persistence.core.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.persistence.jar" />
+    <property name="libs.javaee-web-api-6.0.classpath" value="/usr/local/netbeans-7.1/enterprise/modules/ext/javaee-web-api-6.0.jar" />
+    <property name="test.test.dir" value="test" />
+    <property name="libs.hibernate-support.maven-pom" value="" />
+    <property name="libs.hibernate-support.javadoc" value="" />
+    <property name="jdk.home" value="/usr/lib/jvm/default-java" />
+    <property name="directory.deployment.supported" value="true" />
+    <property name="libs.javac-api.src" value="" />
+    <property name="javadoc.noindex" value="false" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="nb.show.statistics.ui" value="usageStatisticsEnabled" />
+    <property name="netbeans.autoupdate.variant" value="" />
+    <property name="have.tests" value="true" />
+    <property name="org.xml.sax.driver" value="com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser" />
+    <property name="j2ee.server.instance" value="[/home/alan/Java/glassfish3/glassfish:/home/alan/personal_domain]deployer:gfv3ee6wc:localhost:9375" />
+    <property name="libs.javac-api.javadoc" value="" />
+    <property name="os.name" value="Linux" />
+    <property name="libs.beans-binding.classpath" value="/usr/local/netbeans-7.1/java/modules/ext/beansbinding-1.2.1.jar" />
+    <property name="ap.proc.none.internal" value="" />
+    <property name="org.whattf.datatype.lang-registry" value="jar:file:/usr/local/netbeans-7.1/ide/modules/ext/validator.jar!/nu/validator/localentities/files/www_iana_org_assignments_language_subtag_registry" />
+    <property name="libs.restapi.javadoc" value="/usr/local/netbeans-7.1/enterprise/docs/jsr311-api-1.1.1-javadoc.zip" />
+    <property name="libs.JWSAntTasks.maven-pom" value="" />
+    <property name="nu.validator.spec.alt-advice" value="jar:file:/usr/local/netbeans-7.1/ide/modules/ext/validator.jar!/nu/validator/localentities/files/wiki_whatwg_org_wiki_Validator_nu_alt_advice" />
+    <property name="libs.spring-webmvc3.0.src" value="" />
+    <property name="libs.restapi.classpath" value="/usr/local/netbeans-7.1/enterprise/modules/ext/rest/jsr311-api-1.1.1.jar" />
+    <property name="runmain.jvmargs" value="" />
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="libs.jaxb.maven-pom" value="" />
+    <property name="os.arch" value="amd64" />
+    <property name="libs.eclipselink.src" value="" />
+    <property name="user.name" value="alan" />
+    <property name="j2ee.compile.on.save" value="false" />
+    <property name="libs.jsf12.javadoc" value="/usr/local/netbeans-7.1/enterprise/docs/javaee6-doc-api.zip" />
+    <property name="libs.Comet-GlassFish-v3.javadoc" value="" />
+    <property name="libs.spring-webmvc3.0.maven-pom" value="" />
+    <property name="libs.swing-layout.maven-pom" value="" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner boundary.AgentsFacadeTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/alan/Dropbox/Projects/REM/build/test/results/TEST-boundary.AgentsFacadeTest.xml crashfile=/tmp/junitvmwatcher812306146019479548.properties propsfile=/tmp/junit3867112657698894367.properties" />
+    <property name="build.classes.dir" value="build/web/WEB-INF/classes" />
+    <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
+    <property name="libs.Java-EE-GlassFish-v3.wsjwsdp" value="" />
+    <property name="ap.supported.internal" value="true" />
+    <property name="libs.jaxws21.javadoc" value="/usr/local/netbeans-7.1/java/docs/jaxws-api-doc.zip" />
+    <property name="build.web.excludes" value="**/*.java,**/*.form" />
+    <property name="includes" value="**" />
+    <property name="j2ee.platform.wsimport.classpath" value="/home/alan/Java/glassfish3/glassfish/modules/webservices-osgi.jar:/home/alan/Java/glassfish3/glassfish/modules/endorsed/webservices-api-osgi.jar:/home/alan/Java/glassfish3/glassfish/modules/jaxb-osgi.jar:/home/alan/Java/glassfish3/glassfish/modules/endorsed/jaxb-api-osgi.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.ejb.jar" />
+    <property name="user.country" value="US" />
+    <property name="libs.jstl11.javadoc" value="/usr/local/netbeans-7.1/enterprise/docs/javaee6-doc-api.zip" />
+    <property name="javadoc.encoding" value="UTF-8" />
+    <property name="javac.classpath" value="lib/commons-codec-1.6-bin.zip:lib/commons-codec-1.6.jar:lib/log4j-1.2.15.jar:/home/alan/Dropbox/Projects/REM/lib/PrimeFaces3.0/primefaces-3.0.RC2.jar:/home/alan/Dropbox/Projects/REM/lib/MySQLDriver/mysql-connector-java-5.1.13-bin.jar:lib/commons-fileupload-1.2.2.jar:lib/commons-io-2.1.jar:lib/derbyclient.jar:lib/derby.jar" />
+    <property name="libs.jsp-compilation-syscp.src" value="" />
+    <property name="libs.JAVADB_DRIVER_LABEL.src" value="" />
+    <property name="file.reference.src-java" value="src/java" />
+    <property name="do.debug.server" value="true" />
+    <property name="debug-transport" value="dt_socket" />
+    <property name="netbeans.system_http_non_proxy_hosts" value="" />
+    <property name="netbeans.home" value="/usr/local/netbeans-7.1/platform" />
+    <property name="build.compiler.emacs" value="true" />
+    <property name="libs.javaee-web-api-6.0.src" value="" />
+    <property name="libs.ejb3-persistence.src" value="" />
+    <property name="libs.Java-EE-GlassFish-v3.javadoc" value="/usr/local/netbeans-7.1/enterprise/docs/javaee6-doc-api.zip" />
+    <property name="libs.jsp-compilation-syscp.classpath" value="/usr/local/netbeans-7.1/java/ant/lib/ant.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/servlet3.0-jsp2.2-api.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/glassfish-jspparser-3.0.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/standard.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/jsf-2_1/jsf-impl.jar" />
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-6-openjdk/jre/lib/endorsed" />
+    <property name="libs.Comet-GlassFish-v3.maven-pom" value="" />
+    <property name="test.includes" value="boundary/AgentsFacadeTest.java" />
+    <property name="netbeans.dynamic.classpath" value="/usr/local/netbeans-7.1/platform/core/org-openide-filesystems.jar:/usr/local/netbeans-7.1/platform/core/core.jar:/usr/local/netbeans-7.1/platform/core/locale/core_pt_BR.jar:/usr/local/netbeans-7.1/platform/core/locale/org-openide-filesystems_ru.jar:/usr/local/netbeans-7.1/platform/core/locale/core_zh_CN.jar:/usr/local/netbeans-7.1/platform/core/locale/org-openide-filesystems_ja.jar:/usr/local/netbeans-7.1/platform/core/locale/org-openide-filesystems_zh_CN.jar:/usr/local/netbeans-7.1/platform/core/locale/core_ru.jar:/usr/local/netbeans-7.1/platform/core/locale/org-openide-filesystems_pt_BR.jar:/usr/local/netbeans-7.1/platform/core/locale/core_ja.jar:/usr/local/netbeans-7.1/nb/core/org-netbeans-upgrader.jar:/usr/local/netbeans-7.1/nb/core/locale/org-netbeans-upgrader_pt_BR.jar:/usr/local/netbeans-7.1/nb/core/locale/org-netbeans-upgrader_ru.jar:/usr/local/netbeans-7.1/nb/core/locale/core_nb_ru.jar:/usr/local/netbeans-7.1/nb/core/locale/core_nb_zh_CN.jar:/usr/local/netbeans-7.1/nb/core/locale/core_nb_pt_BR.jar:/usr/local/netbeans-7.1/nb/core/locale/core_nb_ja.jar:/usr/local/netbeans-7.1/nb/core/locale/org-netbeans-upgrader_zh_CN.jar:/usr/local/netbeans-7.1/nb/core/locale/org-netbeans-upgrader_ja.jar:/usr/local/netbeans-7.1/nb/core/locale/core_nb.jar" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="libs.primefaces.classpath" value="/home/alan/Dropbox/Projects/REM/lib/primefaces/primefaces-2.2.1.jar" />
+    <property name="libs.javaee-api-6.0.classpath" value="/usr/local/netbeans-7.1/enterprise/modules/ext/javaee-api-6.0.jar" />
+    <property name="netbeans.productversion" value="NetBeans IDE 7.1 (Build 201112071828)" />
+    <property name="libs.hibernate-persistence.classpath" value="/usr/local/netbeans-7.1/java/modules/ext/hibernate/antlr-2.7.6.jar:/usr/local/netbeans-7.1/java/modules/ext/hibernate/asm.jar:/usr/local/netbeans-7.1/java/modules/ext/hibernate/asm-attrs.jar:/usr/local/netbeans-7.1/java/modules/ext/hibernate/cglib-2.1.3.jar:/usr/local/netbeans-7.1/java/modules/ext/hibernate/commons-collections-2.1.1.jar:/usr/local/netbeans-7.1/ide/modules/org-apache-commons-logging.jar:/usr/local/netbeans-7.1/java/modules/ext/hibernate/dom4j-1.6.1.jar:/usr/local/netbeans-7.1/java/modules/ext/hibernate/ehcache-1.2.3.jar:/usr/local/netbeans-7.1/java/modules/ext/hibernate/jdbc2_0-stdext.jar:/usr/local/netbeans-7.1/java/modules/ext/hibernate/jta.jar:/usr/local/netbeans-7.1/java/modules/ext/hibernate/hibernate3.jar:/usr/local/netbeans-7.1/java/modules/ext/hibernate/hibernate-tools.jar:/usr/local/netbeans-7.1/java/modules/ext/hibernate/hibernate-annotations.jar:/usr/local/netbeans-7.1/java/modules/ext/hibernate/hibernate-commons-annotations.jar:/usr/local/netbeans-7.1/java/modules/ext/hibernate/hibernate-entitymanager.jar:/usr/local/netbeans-7.1/java/modules/ext/hibernate/javassist.jar:/usr/local/netbeans-7.1/java/modules/ext/hibernate/ejb3-persistence.jar" />
+    <property name="libs.jaxws21.src" value="" />
+    <property name="do.war.package.with.custom.manifest" value="true" />
+    <property name="netbeans.autoupdate.language" value="en" />
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="libs.javaee-api-6.0.javadoc" value="/usr/local/netbeans-7.1/enterprise/docs/javaee6-doc-api.zip" />
+    <property name="javac.debug" value="true" />
+    <property name="javadoc.splitindex" value="true" />
+    <property name="file.separator" value="/" />
+    <property name="libs.restlib_gfv3ee6.classpath" value="/home/alan/Java/glassfish3/glassfish/modules/jackson-core-asl.jar:/home/alan/Java/glassfish3/glassfish/modules/jackson-jaxrs.jar:/home/alan/Java/glassfish3/glassfish/modules/jackson-mapper-asl.jar:/home/alan/Java/glassfish3/glassfish/modules/jersey-client.jar:/home/alan/Java/glassfish3/glassfish/modules/jersey-core.jar:/home/alan/Java/glassfish3/glassfish/modules/jersey-gf-server.jar:/home/alan/Java/glassfish3/glassfish/modules/jersey-json.jar:/home/alan/Java/glassfish3/glassfish/modules/jersey-multipart.jar:/home/alan/Java/glassfish3/glassfish/modules/jettison.jar:/home/alan/Java/glassfish3/glassfish/modules/mimepull.jar" />
+    <property name="libs.junit_4.maven-pom" value="" />
+    <property name="resource.dir" value="setup" />
+    <property name="javac.test.processorpath" value="lib/commons-codec-1.6-bin.zip:lib/commons-codec-1.6.jar:lib/log4j-1.2.15.jar:/home/alan/Dropbox/Projects/REM/lib/PrimeFaces3.0/primefaces-3.0.RC2.jar:/home/alan/Dropbox/Projects/REM/lib/MySQLDriver/mysql-connector-java-5.1.13-bin.jar:lib/commons-fileupload-1.2.2.jar:lib/commons-io-2.1.jar:lib/derbyclient.jar:lib/derby.jar:build/web/WEB-INF/classes:/home/alan/Dropbox/Projects/REM/lib/junit_4/junit-4.8.2.jar:/home/alan/Dropbox/Projects/REM/lib/MySQLDriver/mysql-connector-java-5.1.13-bin.jar:lib/derby.jar" />
+    <property name="netbeans.buildnumber" value="201112071828" />
+    <property name="libs.JWSAntTasks.javadoc" value="" />
+    <property name="javax.accessibility.assistive_technologies" value="org.GNOME.Accessibility.JavaBridge" />
+    <property name="build.generated.sources.dir" value="build/generated-sources" />
+    <property name="libs.eclipselinkmodelgen.classpath" value="/home/alan/Dropbox/Projects/REM/lib/eclipselinkmodelgen/eclipselink-jpa-modelgen-2.2.0.jar" />
+    <property name="libs.Java-EE-GlassFish-v3.wscompile" value="" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="libs.junit.classpath" value="/home/alan/Dropbox/Projects/REM/lib/junit/junit-3.8.2.jar" />
+    <property name="libs.jaxb.javadoc" value="/usr/local/netbeans-7.1/ide/docs/jaxb-api-doc.zip" />
+    <property name="libs.struts.classpath" value="/usr/local/netbeans-7.1/enterprise/modules/ext/struts/antlr-2.7.2.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/struts/bsf-2.3.0.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/struts/commons-beanutils-1.8.0.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/struts/commons-chain-1.2.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/struts/commons-digester-1.8.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/struts/commons-fileupload-1.1.1.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/struts/commons-io-1.1.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/struts/commons-logging-1.0.4.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/struts/commons-validator-1.3.1.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/struts/jstl-1.0.2.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/struts/oro-2.0.8.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/struts/standard-1.0.6.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/struts/struts-core-1.3.10.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/struts/struts-el-1.3.10.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/struts/struts-extras-1.3.10.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/struts/struts-faces-1.3.10.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/struts/struts-mailreader-dao-1.3.10.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/struts/struts-scripting-1.3.10.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/struts/struts-taglib-1.3.10.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/struts/struts-tiles-1.3.10.jar" />
+    <property name="application.args.param" value="" />
+    <property name="ant.home" value="/usr/local/netbeans-7.1/java/ant" />
+    <property name="libs.junit_4.src" value="/home/alan/Dropbox/Projects/REM/lib/junit_4/junit-4.8.2-src.jar" />
+    <property name="conf.dir" value="src/conf" />
+    <property name="webinf.dir" value="web/WEB-INF" />
+    <property name="libs.absolutelayout.maven-pom" value="" />
+    <property name="ant.java.version" value="1.6" />
+    <property name="java.library.path" value="/usr/lib/jvm/java-6-openjdk/jre/lib/amd64/server:/usr/lib/jvm/java-6-openjdk/jre/lib/amd64:/usr/lib/jvm/java-6-openjdk/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib/jni:/lib:/usr/lib" />
+    <property name="javadoc.author" value="false" />
+    <property name="libs.metro.maven-pom" value="" />
+    <property name="libs.EclipseLink-GlassFish-v3.src" value="" />
+    <property name="java.util.logging.config.class" value="org.netbeans.core.startup.TopLogging" />
+    <property name="libs.PostgreSQLDriver.src" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="basedir" value="/home/alan/Dropbox/Projects/REM" />
+    <property name="jar.compress" value="false" />
+    <property name="libs.jstl11.classpath" value="/usr/local/netbeans-7.1/enterprise/modules/ext/standard.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/jstl.jar" />
+    <property name="path.separator" value=":" />
+    <property name="dist.war" value="dist/REM.war" />
+    <property name="libs.javaee-web-api-6.0.javadoc" value="/usr/local/netbeans-7.1/enterprise/docs/javaee6-doc-api.zip" />
+    <property name="ant.junit.enabletestlistenerevents" value="true" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="libs.jaxws21.classpath" value="/usr/local/netbeans-7.1/ide/modules/ext/jaxb/jaxb-impl.jar:/usr/local/netbeans-7.1/ide/modules/ext/jaxb/jaxb-xjc.jar:/usr/local/netbeans-7.1/java/modules/ext/jaxws22/FastInfoset.jar:/usr/local/netbeans-7.1/java/modules/ext/jaxws22/gmbal-api-only.jar:/usr/local/netbeans-7.1/java/modules/ext/jaxws22/http.jar:/usr/local/netbeans-7.1/java/modules/ext/jaxws22/jaxws-rt.jar:/usr/local/netbeans-7.1/java/modules/ext/jaxws22/jaxws-tools.jar:/usr/local/netbeans-7.1/java/modules/ext/jaxws22/management-api.jar:/usr/local/netbeans-7.1/java/modules/ext/jaxws22/mimepull.jar:/usr/local/netbeans-7.1/java/modules/ext/jaxws22/policy.jar:/usr/local/netbeans-7.1/java/modules/ext/jaxws22/saaj-impl.jar:/usr/local/netbeans-7.1/java/modules/ext/jaxws22/stax-ex.jar:/usr/local/netbeans-7.1/java/modules/ext/jaxws22/streambuffer.jar:/usr/local/netbeans-7.1/java/modules/ext/jaxws22/woodstox.jar:/usr/local/netbeans-7.1/java/modules/ext/jaxws22/api/jaxws-api.jar:/usr/local/netbeans-7.1/java/modules/ext/jaxws22/api/jsr181-api.jar:/usr/local/netbeans-7.1/java/modules/ext/jaxws22/api/jsr250-api.jar:/usr/local/netbeans-7.1/java/modules/ext/jaxws22/api/saaj-api.jar:/usr/local/netbeans-7.1/ide/modules/ext/jaxb/activation.jar:/usr/local/netbeans-7.1/ide/modules/ext/jaxb/api/jaxb-api.jar:/usr/local/netbeans-7.1/ide/modules/ext/jaxb/api/jsr173_api.jar" />
+    <property name="libs.struts.src" value="" />
+    <property name="apple.awt.graphics.UseQuartz" value="true" />
+    <property name="user.language" value="en" />
+    <property name="file.reference.REM-test" value="test" />
+    <property name="j2ee.platform.classpath" value="/home/alan/Java/glassfish3/glassfish/modules/javax.ejb.jar:/home/alan/Java/glassfish3/glassfish/modules/jsf-impl.jar:/home/alan/Java/glassfish3/glassfish/modules/endorsed/jaxb-api-osgi.jar:/home/alan/Java/glassfish3/glassfish/modules/endorsed/javax.annotation.jar:/home/alan/Java/glassfish3/glassfish/modules/bean-validator.jar:/home/alan/Java/glassfish3/mq/lib/jaxm-api.jar:/home/alan/Java/glassfish3/glassfish/modules/jersey-core.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.mail.jar:/home/alan/Java/glassfish3/glassfish/modules/jsf-api.jar:/home/alan/Java/glassfish3/glassfish/modules/jaxb-osgi.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.enterprise.deploy.jar:/home/alan/Java/glassfish3/glassfish/modules/webservices-osgi.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.servlet.jsp.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.management.j2ee.jar:/home/alan/Java/glassfish3/glassfish/modules/jstl-impl.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.servlet.jar:/home/alan/Java/glassfish3/glassfish/modules/weld-osgi-bundle.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.persistence.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.servlet.jsp.jstl.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.resource.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.transaction.jar:/home/alan/Java/glassfish3/glassfish/modules/endorsed/webservices-api-osgi.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.jms.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.security.jacc.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.security.auth.message.jar" />
+    <property name="libs.JAXB-ENDORSED.maven-pom" value="" />
+    <property name="libs.spring-framework.classpath" value="/usr/local/netbeans-7.1/ide/modules/org-apache-commons-logging.jar:/usr/local/netbeans-7.1/java/modules/ext/cglib-2.2.jar:/usr/local/netbeans-7.1/java/modules/ext/spring/spring-2.5.6.SEC01.jar" />
+    <property name="libs.eclipselink.maven-pom" value="" />
+    <property name="build.meta.inf.dir" value="build/web/META-INF" />
+    <property name="persistence.xml.dir" value="src/conf" />
+    <property name="org.whattf.datatype.charset-registry" value="jar:file:/usr/local/netbeans-7.1/ide/modules/ext/validator.jar!/nu/validator/localentities/files/www_iana_org_assignments_character_sets" />
+    <property name="libs.primefaces.javadoc" value="" />
+    <property name="libs.spring-framework300.maven-pom" value="" />
+    <property name="run.test.classpath" value="lib/commons-codec-1.6-bin.zip:lib/commons-codec-1.6.jar:lib/log4j-1.2.15.jar:/home/alan/Dropbox/Projects/REM/lib/PrimeFaces3.0/primefaces-3.0.RC2.jar:/home/alan/Dropbox/Projects/REM/lib/MySQLDriver/mysql-connector-java-5.1.13-bin.jar:lib/commons-fileupload-1.2.2.jar:lib/commons-io-2.1.jar:lib/derbyclient.jar:lib/derby.jar:build/web/WEB-INF/classes:/home/alan/Dropbox/Projects/REM/lib/junit_4/junit-4.8.2.jar:/home/alan/Dropbox/Projects/REM/lib/MySQLDriver/mysql-connector-java-5.1.13-bin.jar:lib/derby.jar:build/test/classes" />
+    <property name="ant.project.invoked-targets" value="test-single" />
+    <property name="libs.swing-layout.javadoc" value="/usr/local/netbeans-7.1/platform/docs/swing-layout-1.0.4-doc.zip" />
+    <property name="libs.ejb3-persistence.maven-pom" value="" />
+    <property name="jspc.schemas" value="/resources/schemas/" />
+    <property name="libs.PostgreSQLDriver.maven-pom" value="" />
+    <property name="java.class.version" value="50.0" />
+    <property name="libs.JAVADB_DRIVER_LABEL.classpath" value="/home/alan/Java/glassfish3/javadb/lib/derby.jar:/home/alan/Java/glassfish3/javadb/lib/derbyclient.jar:/home/alan/Java/glassfish3/javadb/lib/derbynet.jar" />
+    <property name="libs.javaee-endorsed-api-6.0.src" value="" />
+    <property name="netbeans.system_http_proxy" value="DIRECT" />
+    <property name="libs.eclipselink.javadoc" value="" />
+    <property name="libs.jsp-compilation.maven-pom" value="" />
+    <property name="user.properties.file" value="/home/alan/.netbeans/7.1/build.properties" />
+    <property name="build.web.dir" value="build/web" />
+    <property name="libs.spring-framework.src" value="" />
+    <property name="libs.javac-api.maven-pom" value="" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="libs.JAXB-ENDORSED.javadoc" value="" />
+    <property name="j2ee.server.middleware" value="/home/alan/Java/glassfish3" />
+    <property name="libs.JWSAntTasks.classpath" value="/usr/local/netbeans-7.1/java/ant/extra/org-netbeans-modules-javawebstart-anttasks.jar" />
+    <property name="libs.spring-framework300.src" value="" />
+    <property name="file.reference.derbyclient.jar" value="lib/derbyclient.jar" />
+    <property name="auxiliary.org-netbeans-modules-projectapi.jsf_2e_language" value="Facelets" />
+    <property name="empty.dir" value="/home/alan/Dropbox/Projects/REM/build/empty" />
+    <property name="display.browser" value="true" />
+    <property name="version-output" value="java version &quot;1.6" />
+    <property name="javadoc.preview" value="true" />
+    <property name="java.home" value="/usr/lib/jvm/java-6-openjdk/jre" />
+    <property name="libs.jsp-compilation.src" value="" />
+    <property name="libs.spring-webmvc.src" value="" />
+    <property name="debug.test.classpath" value="lib/commons-codec-1.6-bin.zip:lib/commons-codec-1.6.jar:lib/log4j-1.2.15.jar:/home/alan/Dropbox/Projects/REM/lib/PrimeFaces3.0/primefaces-3.0.RC2.jar:/home/alan/Dropbox/Projects/REM/lib/MySQLDriver/mysql-connector-java-5.1.13-bin.jar:lib/commons-fileupload-1.2.2.jar:lib/commons-io-2.1.jar:lib/derbyclient.jar:lib/derby.jar:build/web/WEB-INF/classes:/home/alan/Dropbox/Projects/REM/lib/junit_4/junit-4.8.2.jar:/home/alan/Dropbox/Projects/REM/lib/MySQLDriver/mysql-connector-java-5.1.13-bin.jar:lib/derby.jar:build/test/classes" />
+    <property name="libs.javaee-endorsed-api-6.0.classpath" value="/home/alan/Dropbox/Projects/REM/lib/javaee-endorsed-api-6.0/javax.annotation.jar;/home/alan/Dropbox/Projects/REM/lib/javaee-endorsed-api-6.0/jaxb-api-osgi.jar;/home/alan/Dropbox/Projects/REM/lib/javaee-endorsed-api-6.0/webservices-api-osgi.jar" />
+    <property name="libs.javaee-api-6.0.src" value="" />
+    <property name="netbeans.importclass" value="org.netbeans.upgrade.AutoUpgrade" />
+    <property name="ant.project.default-target" value="default" />
+    <property name="annotation.processing.run.all.processors" value="true" />
+    <property name="file.reference.log4j-1.2.15.jar" value="lib/log4j-1.2.15.jar" />
+    <property name="libs.toplink.maven-pom" value="" />
+    <property name="libs.PostgreSQLDriver.javadoc" value="" />
+    <property name="libs.restlib.classpath" value="/usr/local/netbeans-7.1/enterprise/modules/ext/rest/asm-3.1.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/rest/jackson-core-asl-1.7.1.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/rest/jackson-jaxrs-1.7.1.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/rest/jackson-mapper-asl-1.7.1.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/rest/jackson-xc-1.7.1.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/rest/jersey-apache-client-1.8.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/rest/jersey-atom-abdera-1.8.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/rest/jersey-client-1.8.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/rest/jersey-core-1.8.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/rest/jersey-guice-1.8.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/rest/jersey-json-1.8.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/rest/jersey-multipart-1.8.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/rest/jersey-server-1.8.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/rest/jersey-simple-server-1.8.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/rest/jersey-spring-1.8.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/rest/jettison-1.1.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/rest/oauth-client-1.8.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/rest/oauth-server-1.8.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/rest/oauth-signature-1.8.jar:/usr/local/netbeans-7.1/ide/modules/ext/jaxb/activation.jar:/usr/local/netbeans-7.1/ide/modules/ext/jaxb/api/jaxb-api.jar:/usr/local/netbeans-7.1/ide/modules/ext/jaxb/api/jsr173_api.jar" />
+    <property name="libs.MySQLDriver.maven-pom" value="" />
+    <property name="j2ee.platform.wsgen.classpath" value="/home/alan/Java/glassfish3/glassfish/modules/webservices-osgi.jar:/home/alan/Java/glassfish3/glassfish/modules/endorsed/webservices-api-osgi.jar:/home/alan/Java/glassfish3/glassfish/modules/jaxb-osgi.jar:/home/alan/Java/glassfish3/glassfish/modules/endorsed/jaxb-api-osgi.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.ejb.jar" />
+    <property name="ant.file.type.REM-impl" value="file" />
+    <property name="libraries.dir.nativedirsep" value="/home/alan/Dropbox/Projects/REM/lib" />
+    <property name="ant.file.REM-impl" value="/home/alan/Dropbox/Projects/REM/nbproject/build-impl.xml" />
+    <property name="libs.junit_4.javadoc" value="/home/alan/Dropbox/Projects/REM/lib/junit_4/junit-4.8.2-api.zip" />
+    <property name="libs.spring-webmvc.javadoc" value="" />
+    <property name="libs.toplink.src" value="" />
+    <property name="libs.EclipseLink-GlassFish-v3.maven-pom" value="" />
+    <property name="libs.javaee-web-api-6.0.maven-pom" value="" />
+    <property name="j2ee.deploy.on.save" value="false" />
+    <property name="file.reference.commons-codec-1.6-bin.zip" value="lib/commons-codec-1.6-bin.zip" />
+    <property name="libs.hibernate-support.src" value="" />
+    <property name="libs.javaee-endorsed-api-6.0.javadoc" value="/home/alan/Dropbox/Projects/REM/lib/javaee-endorsed-api-6.0/javaee6-doc-api.zip" />
+    <property name="libs.spring-webmvc3.0.javadoc" value="" />
+    <property name="annotation.processing.enabled.in.editor" value="true" />
+    <property name="libs.restapi.src" value="" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="javac.deprecation" value="false" />
+    <property name="javadoc.use" value="true" />
+    <property name="client.urlPart" value="" />
+    <property name="sun.java2d.noddraw" value="true" />
+    <property name="libs.jsp-compiler.classpath" value="/usr/local/netbeans-7.1/enterprise/ant/extra/jspcompile.jar" />
+    <property name="dist.ear.war" value="dist/REM.war" />
+    <property name="javac.processorpath" value="lib/commons-codec-1.6-bin.zip:lib/commons-codec-1.6.jar:lib/log4j-1.2.15.jar:/home/alan/Dropbox/Projects/REM/lib/PrimeFaces3.0/primefaces-3.0.RC2.jar:/home/alan/Dropbox/Projects/REM/lib/MySQLDriver/mysql-connector-java-5.1.13-bin.jar:lib/commons-fileupload-1.2.2.jar:lib/commons-io-2.1.jar:lib/derbyclient.jar:lib/derby.jar" />
+    <property name="libs.spring-webmvc.classpath" value="/usr/local/netbeans-7.1/enterprise/modules/ext/spring/spring-webmvc-2.5.6.SEC01.jar" />
+    <property name="javac.compilerargs" value="-proc:none" />
+    <property name="svnkit.http.methods" value="Basic" />
+    <property name="ant.file" value="/home/alan/Dropbox/Projects/REM/build.xml" />
+    <property name="libs.ApacheCommonsCodec.classpath" value="/home/alan/Dropbox/Projects/REM/lib/commons-codec-1.6.jar" />
+    <property name="libs.beans-binding.maven-pom" value="" />
+    <property name="libs.jsf12.classpath" value="/usr/local/netbeans-7.1/enterprise/modules/ext/jsf-1_2/commons-beanutils.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/jsf-1_2/commons-collections.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/jsf-1_2/commons-digester.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/jsf-1_2/commons-logging.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/jsf-1_2/jsf-api.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/jsf-1_2/jsf-impl.jar" />
+    <property name="has.custom.manifest" value="true" />
+    <property name="libs.restapi.maven-pom" value="" />
+    <property name="libs.beans-binding.src" value="" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="libs.swing-layout.src" value="/usr/local/netbeans-7.1/platform/docs/swing-layout-1.0.4-src.zip" />
+    <property name="ant.file.REM" value="/home/alan/Dropbox/Projects/REM/build.xml" />
+    <property name="libs.Java-EE-GlassFish-v3.embedabbleejb" value="" />
+    <property name="org.openide.major.version" value="IDE/1" />
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+    <property name="do.display.browser.debug" value="true" />
+    <property name="netbeans.user" value="/home/alan/.netbeans/7.1" />
+    <property name="javadoc.additionalparam" value="" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="endorsed.classpath.cmd.line.arg" value="-Xbootclasspath/p:&apos;/home/alan/Dropbox/Projects/REM/lib/javaee-endorsed-api-6.0/javax.annotation.jar:/home/alan/Dropbox/Projects/REM/lib/javaee-endorsed-api-6.0/jaxb-api-osgi.jar:/home/alan/Dropbox/Projects/REM/lib/javaee-endorsed-api-6.0/webservices-api-osgi.jar&apos;" />
+    <property name="j2ee.platform.wsit.classpath" value="" />
+    <property name="libraries.basename" value="nblibraries" />
+    <property name="compile.jsps" value="false" />
+    <property name="libs.jsp-compiler.src" value="" />
+    <property name="org.openide.awt.ActionReference.completion" value="org.netbeans.modules.apisupport.project.layers.PathCompletions" />
+    <property name="deploy.ant.properties.file" value="/home/alan/.netbeans/7.1/gfv371276242.properties" />
+    <property name="j2ee.platform.wscompile.classpath" value="/home/alan/Java/glassfish3/glassfish/modules/webservices-osgi.jar" />
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-6-openjdk/jre/lib/amd64" />
+    <property name="have.sources" value="true" />
+    <property name="java.source.based" value="true" />
+    <property name="debug.classpath" value="build/web/WEB-INF/classes:lib/commons-codec-1.6-bin.zip:lib/commons-codec-1.6.jar:lib/log4j-1.2.15.jar:/home/alan/Dropbox/Projects/REM/lib/PrimeFaces3.0/primefaces-3.0.RC2.jar:/home/alan/Dropbox/Projects/REM/lib/MySQLDriver/mysql-connector-java-5.1.13-bin.jar:lib/commons-fileupload-1.2.2.jar:lib/commons-io-2.1.jar:lib/derbyclient.jar:lib/derby.jar" />
+    <property name="war.name" value="REM.war" />
+    <property name="javadoc.private" value="false" />
+    <property name="libs.jsf20.classpath" value="/usr/local/netbeans-7.1/enterprise/modules/ext/jsf-2_1/jsf-api.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/jsf-2_1/jsf-impl.jar" />
+    <property name="ap.processors.internal" value="" />
+    <property name="javadoc.encoding.used" value="UTF-8" />
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+    <property name="ant.project.name" value="REM" />
+    <property name="netbeans.hash.code" value="unique=NB_JAVA_WEBEE073ae4d1d-a449-465b-bce4-4ea74f188865_4c2f1c1a-d739-4a6d-81e5-72fdeb7b91ad" />
+    <property name="libs.jsp-compilation-syscp.maven-pom" value="" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="libs.CopyLibs.javadoc" value="" />
+    <property name="j2ee.server.domain" value="/home/alan/personal_domain" />
+    <property name="org.openide.specification.version" value="6.2" />
+    <property name="j2ee.server.home" value="/home/alan/Java/glassfish3/glassfish" />
+    <property name="libs.hibernate-support.classpath" value="/usr/local/netbeans-7.1/java/modules/ext/hibernate/antlr-2.7.6.jar:/usr/local/netbeans-7.1/java/modules/ext/hibernate/asm.jar:/usr/local/netbeans-7.1/java/modules/ext/hibernate/asm-attrs.jar:/usr/local/netbeans-7.1/java/modules/ext/hibernate/cglib-2.1.3.jar:/usr/local/netbeans-7.1/java/modules/ext/hibernate/commons-collections-2.1.1.jar:/usr/local/netbeans-7.1/ide/modules/org-apache-commons-logging.jar:/usr/local/netbeans-7.1/java/modules/ext/hibernate/dom4j-1.6.1.jar:/usr/local/netbeans-7.1/java/modules/ext/hibernate/ehcache-1.2.3.jar:/usr/local/netbeans-7.1/java/modules/ext/hibernate/jdbc2_0-stdext.jar:/usr/local/netbeans-7.1/java/modules/ext/hibernate/jta.jar:/usr/local/netbeans-7.1/java/modules/ext/hibernate/hibernate3.jar:/usr/local/netbeans-7.1/java/modules/ext/hibernate/hibernate-tools.jar:/usr/local/netbeans-7.1/java/modules/ext/hibernate/hibernate-annotations.jar:/usr/local/netbeans-7.1/java/modules/ext/hibernate/hibernate-commons-annotations.jar:/usr/local/netbeans-7.1/java/modules/ext/hibernate/hibernate-entitymanager.jar:/usr/local/netbeans-7.1/java/modules/ext/hibernate/javassist.jar" />
+    <property name="user.home" value="/home/alan" />
+    <property name="annotation.processing.processors.list" value="" />
+    <property name="libs.primefaces.maven-pom" value="" />
+    <property name="debug-args-line" value="-Xdebug" />
+    <property name="sun.zip.disableMemoryMapping" value="true" />
+    <property name="libs.javaee-api-6.0.maven-pom" value="" />
+    <property name="libs.JWSAntTasks.src" value="" />
+    <property name="libs.CopyLibs.maven-pom" value="" />
+    <property name="libs.spring-framework300.javadoc" value="" />
+    <property name="libs.hibernate-persistence.maven-pom" value="" />
+    <property name="libs.absolutelayout.javadoc" value="" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="nu.validator.spec.microsyntax-descriptions" value="jar:file:/usr/local/netbeans-7.1/ide/modules/ext/validator.jar!/nu/validator/localentities/files/wiki_whatwg_org_wiki_MicrosyntaxDescriptions" />
+    <property name="no.dist.ear.dir" value="true" />
+    <property name="libraries.dir" value="/home/alan/Dropbox/Projects/REM/lib" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="libs.javac-api.classpath" value="/usr/local/netbeans-7.1/java/modules/ext/javac-api-nb-7.0-b07.jar" />
+    <property name="java.version" value="1.6.0_23" />
+    <property name="javadoc.version" value="false" />
+    <property name="libs.MySQLDriver.javadoc" value="" />
+    <property name="org.openide.version" value="deprecated" />
+    <property name="libs.restlib_gfv3ee6.maven-pom" value="" />
+    <property name="source.encoding" value="UTF-8" />
+    <property name="ap.cmd.line.internal" value="" />
+    <property name="libs.eclipselinkmodelgen.maven-pom" value="" />
+    <property name="libs.jsp-compilation-syscp.javadoc" value="" />
+    <property name="libs.junit.maven-pom" value="" />
+    <property name="libs.eclipselinkmodelgen.javadoc" value="" />
+    <property name="libs.metro.javadoc" value="/usr/local/netbeans-7.1/enterprise/docs/metro-1.4-doc.zip" />
+    <property name="libs.struts.maven-pom" value="" />
+    <property name="netbeans.home+have.tests" value="true" />
+    <property name="libs.jaxb.src" value="" />
+    <property name="libs.Java-EE-GlassFish-v3.wsgenerate" value="" />
+    <property name="libs.jaxb.classpath" value="/usr/local/netbeans-7.1/ide/modules/ext/jaxb/jaxb-impl.jar:/usr/local/netbeans-7.1/ide/modules/ext/jaxb/jaxb-xjc.jar:/usr/local/netbeans-7.1/ide/modules/ext/jaxb/jaxb1-impl.jar:/usr/local/netbeans-7.1/ide/modules/ext/jaxb/activation.jar:/usr/local/netbeans-7.1/ide/modules/ext/jaxb/api/jaxb-api.jar:/usr/local/netbeans-7.1/ide/modules/ext/jaxb/api/jsr173_api.jar" />
+    <property name="has.persistence.xml" value="true" />
+    <property name="dist.javadoc.dir" value="dist/javadoc" />
+    <property name="libs.swing-layout.classpath" value="/usr/local/netbeans-7.1/platform/modules/ext/swing-layout-1.0.4.jar" />
+    <property name="libs.spring-webmvc3.0.classpath" value="/usr/local/netbeans-7.1/java/modules/ext/spring-3.0/spring-webmvc-3.0.6.RELEASE.jar" />
+    <property name="jspc.dtds" value="/resources/dtds/" />
+    <property name="libs.restlib.src" value="" />
+    <property name="javac.source" value="1.6" />
+    <property name="build.generated.dir" value="build/generated" />
+    <property name="line.separator" value="
+" />
+    <property name="libs.hibernate-persistence.src" value="" />
+    <property name="java.specification.version" value="1.6" />
+    <property name="libraries.path" value="/home/alan/Dropbox/Projects/REM/lib/nblibraries.properties" />
+    <property name="libs.PrimeFaces3.0.classpath" value="/home/alan/Dropbox/Projects/REM/lib/PrimeFaces3.0/primefaces-3.0.RC2.jar" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="libs.jaxws21.maven-pom" value="" />
+    <property name="libs.spring-framework.maven-pom" value="" />
+    <property name="sun.boot.class.path" value="/home/alan/Dropbox/Projects/REM/lib/javaee-endorsed-api-6.0/javax.annotation.jar:/home/alan/Dropbox/Projects/REM/lib/javaee-endorsed-api-6.0/jaxb-api-osgi.jar:/home/alan/Dropbox/Projects/REM/lib/javaee-endorsed-api-6.0/webservices-api-osgi.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/resources.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/rt.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/jsse.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/jce.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/charsets.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/netx.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/plugin.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/rhino.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/modules/jdk.boot.jar:/usr/lib/jvm/java-6-openjdk/jre/classes" />
+    <property name="javac.target" value="1.6" />
+    <property name="build.test.classes.dir" value="build/test/classes" />
+    <property name="src.dir" value="src/java" />
+    <property name="annotation.processing.enabled" value="true" />
+    <property name="libs.jsf20.src" value="" />
+    <property name="libs.jsf12.src" value="" />
+    <property name="j2ee.platform" value="1.6-web" />
+    <property name="libs.JAVADB_DRIVER_LABEL.maven-pom" value="" />
+    <property name="libs.struts.javadoc" value="/usr/local/netbeans-7.1/enterprise/docs/struts-1.3.10-javadoc.zip" />
+    <property name="libs.Comet-GlassFish-v3.classpath" value="/home/alan/Java/glassfish3/glassfish/modules/grizzly-comet.jar" />
+    <property name="libs.restlib_gfv3ee6.javadoc" value="/usr/local/netbeans-7.1/enterprise/docs/jsr311-api-1.1.1-javadoc.zip" />
+    <property name="web.docbase.dir" value="web" />
+    <property name="libs.primefaces.src" value="" />
+    <property name="dist.dir" value="dist" />
+    <property name="javac.fork" value="false" />
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+    <property name="default.javac.source" value="1.6" />
+    <property name="debug-transport-by-os" value="dt_socket" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="libs.MySQLDriver.src" value="" />
+    <property name="build.test.results.dir" value="build/test/results" />
+    <property name="java.runtime.version" value="1.6.0_23-b23" />
+    <property name="libs.ejb3-persistence.javadoc" value="" />
+    <property name="file.reference.commons-codec-1.6.jar" value="lib/commons-codec-1.6.jar" />
+    <property name="jna.platform.library.path" value="/lib64" />
+    <property name="default.javac.target" value="1.6" />
+    <property name="libs.Java-EE-GlassFish-v3.src" value="" />
+    <property name="libs.junit_4.classpath" value="/home/alan/Dropbox/Projects/REM/lib/junit_4/junit-4.8.2.jar" />
+    <property name="user.timezone" value="" />
+    <property name="libs.javaee-endorsed-api-6.0.maven-pom" value="" />
+    <property name="libs.JAVADB_DRIVER_LABEL.javadoc" value="" />
+    <property name="netbeans.dirs" value="/usr/local/netbeans-7.1/nb:/usr/local/netbeans-7.1/bin/../ergonomics:/usr/local/netbeans-7.1/ide:/usr/local/netbeans-7.1/java:/usr/local/netbeans-7.1/apisupport:/usr/local/netbeans-7.1/bin/../webcommon:/usr/local/netbeans-7.1/websvccommon:/usr/local/netbeans-7.1/enterprise:/usr/local/netbeans-7.1/bin/../mobility:/usr/local/netbeans-7.1/profiler:/usr/local/netbeans-7.1/bin/../python:/usr/local/netbeans-7.1/bin/../php:/usr/local/netbeans-7.1/bin/../identity:/usr/local/netbeans-7.1/harness:/usr/local/netbeans-7.1/bin/../cnd:/usr/local/netbeans-7.1/bin/../dlight:/usr/local/netbeans-7.1/bin/../groovy:/usr/local/netbeans-7.1/bin/../extra:/usr/local/netbeans-7.1/bin/../javacard:/usr/local/netbeans-7.1/javafx:" />
+    <property name="libs.jsf20.javadoc" value="/usr/local/netbeans-7.1/enterprise/docs/javaee6-doc-api.zip" />
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-6-openjdk/jre/lib/ext:/usr/java/packages/lib/ext" />
+    <property name="libs.restlib_gfv3ee6.src" value="" />
+    <property name="libs.metro.src" value="" />
+    <property name="endorsed.classpath" value="/home/alan/Dropbox/Projects/REM/lib/javaee-endorsed-api-6.0/javax.annotation.jar;/home/alan/Dropbox/Projects/REM/lib/javaee-endorsed-api-6.0/jaxb-api-osgi.jar;/home/alan/Dropbox/Projects/REM/lib/javaee-endorsed-api-6.0/webservices-api-osgi.jar" />
+    <property name="libs.absolutelayout.classpath" value="/usr/local/netbeans-7.1/java/modules/ext/AbsoluteLayout.jar" />
+    <property name="excludes" value="" />
+    <property name="libs.restlib.maven-pom" value="" />
+    <property name="libs.metro.classpath" value="/usr/local/netbeans-7.1/ide/modules/ext/jaxb/activation.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/metro/webservices-api.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/metro/webservices-extra-api.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/metro/webservices-extra.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/metro/webservices-rt.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/metro/webservices-tools.jar" />
+    <property name="apple.laf.useScreenMenuBar" value="true" />
+    <property name="java.class.path" value="/home/alan/Dropbox/Projects/REM/lib/commons-codec-1.6-bin.zip:/home/alan/Dropbox/Projects/REM/lib/commons-codec-1.6.jar:/home/alan/Dropbox/Projects/REM/lib/log4j-1.2.15.jar:/home/alan/Dropbox/Projects/REM/lib/PrimeFaces3.0/primefaces-3.0.RC2.jar:/home/alan/Dropbox/Projects/REM/lib/MySQLDriver/mysql-connector-java-5.1.13-bin.jar:/home/alan/Dropbox/Projects/REM/lib/commons-fileupload-1.2.2.jar:/home/alan/Dropbox/Projects/REM/lib/commons-io-2.1.jar:/home/alan/Dropbox/Projects/REM/lib/derbyclient.jar:/home/alan/Dropbox/Projects/REM/lib/derby.jar:/home/alan/Dropbox/Projects/REM/build/web/WEB-INF/classes:/home/alan/Dropbox/Projects/REM/lib/junit_4/junit-4.8.2.jar:/home/alan/Dropbox/Projects/REM/build/test/classes:/home/alan/Java/glassfish3/glassfish/modules/javax.ejb.jar:/home/alan/Java/glassfish3/glassfish/modules/jsf-impl.jar:/home/alan/Java/glassfish3/glassfish/modules/endorsed/jaxb-api-osgi.jar:/home/alan/Java/glassfish3/glassfish/modules/endorsed/javax.annotation.jar:/home/alan/Java/glassfish3/glassfish/modules/bean-validator.jar:/home/alan/Java/glassfish3/mq/lib/jaxm-api.jar:/home/alan/Java/glassfish3/glassfish/modules/jersey-core.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.mail.jar:/home/alan/Java/glassfish3/glassfish/modules/jsf-api.jar:/home/alan/Java/glassfish3/glassfish/modules/jaxb-osgi.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.enterprise.deploy.jar:/home/alan/Java/glassfish3/glassfish/modules/webservices-osgi.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.servlet.jsp.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.management.j2ee.jar:/home/alan/Java/glassfish3/glassfish/modules/jstl-impl.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.servlet.jar:/home/alan/Java/glassfish3/glassfish/modules/weld-osgi-bundle.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.persistence.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.servlet.jsp.jstl.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.resource.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.transaction.jar:/home/alan/Java/glassfish3/glassfish/modules/endorsed/webservices-api-osgi.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.jms.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.security.jacc.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.security.auth.message.jar:/home/alan/Java/glassfish3/glassfish/lib/embedded/glassfish-embedded-static-shell.jar:/usr/local/netbeans-7.1/java/ant/lib/ant-launcher.jar:/usr/local/netbeans-7.1/java/ant/lib/ant.jar:/usr/local/netbeans-7.1/java/ant/lib/ant-junit.jar:/usr/local/netbeans-7.1/java/ant/lib/ant-junit4.jar" />
+    <property name="libs.absolutelayout.src" value="" />
+    <property name="j2ee.server.type" value="gfv3ee6" />
+    <property name="os.version" value="3.0.0-12-generic" />
+    <property name="libs.EclipseLink-GlassFish-v3.javadoc" value="/usr/local/netbeans-7.1/enterprise/docs/javaee6-doc-api.zip" />
+    <property name="libs.toplink.javadoc" value="" />
+    <property name="sun.desktop" value="gnome" />
+    <property name="libs.Comet-GlassFish-v3.src" value="" />
+    <property name="libs.restlib.javadoc" value="/usr/local/netbeans-7.1/enterprise/docs/jersey-1.8-javadoc.zip:/usr/local/netbeans-7.1/enterprise/docs/jersey-apache-client-1.8-javadoc.zip:/usr/local/netbeans-7.1/enterprise/docs/jersey-atom-abdera-1.8-javadoc.zip:/usr/local/netbeans-7.1/enterprise/docs/jersey-guice-1.8-javadoc.zip:/usr/local/netbeans-7.1/enterprise/docs/jersey-multipart-1.8-javadoc.zip:/usr/local/netbeans-7.1/enterprise/docs/jersey-simple-server-1.8-javadoc.zip:/usr/local/netbeans-7.1/enterprise/docs/jersey-spring-1.8-javadoc.zip:/usr/local/netbeans-7.1/enterprise/docs/oauth-client-1.8-javadoc.zip:/usr/local/netbeans-7.1/enterprise/docs/oauth-server-1.8-javadoc.zip:/usr/local/netbeans-7.1/enterprise/docs/oauth-signature-1.8-javadoc.zip" />
+    <property name="war.content.additional" value="" />
+    <property name="libs.JAXB-ENDORSED.classpath" value="/usr/local/netbeans-7.1/ide/modules/ext/jaxb/api/jaxb-api.jar" />
+    <property name="j2ee.platform.embeddableejb.classpath" value="/home/alan/Java/glassfish3/glassfish/lib/embedded/glassfish-embedded-static-shell.jar" />
+    <property name="forceRedeploy" value="false" />
+    <property name="libs.eclipselink.classpath" value="/home/alan/Dropbox/Projects/REM/lib/eclipselink/eclipselink-2.2.0.jar;/home/alan/Dropbox/Projects/REM/lib/eclipselink/eclipselink-javax.persistence-2.0.jar" />
+    <property name="libs.beans-binding.javadoc" value="/usr/local/netbeans-7.1/java/docs/beansbinding-1.2.1-doc.zip" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+    <property name="ant.file.type.REM" value="file" />
+    <property name="libs.Java-EE-GlassFish-v3.classpath" value="/home/alan/Java/glassfish3/glassfish/modules/javax.ejb.jar:/home/alan/Java/glassfish3/glassfish/modules/jsf-impl.jar:/home/alan/Java/glassfish3/glassfish/modules/endorsed/jaxb-api-osgi.jar:/home/alan/Java/glassfish3/glassfish/modules/endorsed/javax.annotation.jar:/home/alan/Java/glassfish3/glassfish/modules/bean-validator.jar:/home/alan/Java/glassfish3/mq/lib/jaxm-api.jar:/home/alan/Java/glassfish3/glassfish/modules/jersey-core.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.mail.jar:/home/alan/Java/glassfish3/glassfish/modules/jsf-api.jar:/home/alan/Java/glassfish3/glassfish/modules/jaxb-osgi.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.enterprise.deploy.jar:/home/alan/Java/glassfish3/glassfish/modules/webservices-osgi.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.servlet.jsp.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.management.j2ee.jar:/home/alan/Java/glassfish3/glassfish/modules/jstl-impl.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.servlet.jar:/home/alan/Java/glassfish3/glassfish/modules/weld-osgi-bundle.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.persistence.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.servlet.jsp.jstl.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.resource.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.transaction.jar:/home/alan/Java/glassfish3/glassfish/modules/endorsed/webservices-api-osgi.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.jms.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.security.jacc.jar:/home/alan/Java/glassfish3/glassfish/modules/javax.security.auth.message.jar:/home/alan/Java/glassfish3/glassfish/modules/web-core.jar:/home/alan/Java/glassfish3/glassfish/modules/jackson-core-asl.jar:/home/alan/Java/glassfish3/glassfish/modules/jackson-jaxrs.jar:/home/alan/Java/glassfish3/glassfish/modules/jackson-mapper-asl.jar:/home/alan/Java/glassfish3/glassfish/modules/jersey-client.jar:/home/alan/Java/glassfish3/glassfish/modules/jersey-core.jar:/home/alan/Java/glassfish3/glassfish/modules/jersey-gf-server.jar:/home/alan/Java/glassfish3/glassfish/modules/jersey-json.jar:/home/alan/Java/glassfish3/glassfish/modules/jersey-multipart.jar:/home/alan/Java/glassfish3/glassfish/modules/jettison.jar:/home/alan/Java/glassfish3/glassfish/modules/mimepull.jar" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="libs.CopyLibs.classpath" value="/home/alan/Dropbox/Projects/REM/lib/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar" />
+    <property name="libs.spring-framework300.classpath" value="/usr/local/netbeans-7.1/ide/modules/org-apache-commons-logging.jar:/usr/local/netbeans-7.1/java/modules/ext/cglib-2.2.jar:/usr/local/netbeans-7.1/java/modules/ext/spring-3.0/spring-aop-3.0.6.RELEASE.jar:/usr/local/netbeans-7.1/java/modules/ext/spring-3.0/spring-asm-3.0.6.RELEASE.jar:/usr/local/netbeans-7.1/java/modules/ext/spring-3.0/spring-aspects-3.0.6.RELEASE.jar:/usr/local/netbeans-7.1/java/modules/ext/spring-3.0/spring-beans-3.0.6.RELEASE.jar:/usr/local/netbeans-7.1/java/modules/ext/spring-3.0/spring-context-3.0.6.RELEASE.jar:/usr/local/netbeans-7.1/java/modules/ext/spring-3.0/spring-context-support-3.0.6.RELEASE.jar:/usr/local/netbeans-7.1/java/modules/ext/spring-3.0/spring-core-3.0.6.RELEASE.jar:/usr/local/netbeans-7.1/java/modules/ext/spring-3.0/spring-expression-3.0.6.RELEASE.jar:/usr/local/netbeans-7.1/java/modules/ext/spring-3.0/spring-instrument-3.0.6.RELEASE.jar:/usr/local/netbeans-7.1/java/modules/ext/spring-3.0/spring-instrument-tomcat-3.0.6.RELEASE.jar:/usr/local/netbeans-7.1/java/modules/ext/spring-3.0/spring-jdbc-3.0.6.RELEASE.jar:/usr/local/netbeans-7.1/java/modules/ext/spring-3.0/spring-jms-3.0.6.RELEASE.jar:/usr/local/netbeans-7.1/java/modules/ext/spring-3.0/spring-orm-3.0.6.RELEASE.jar:/usr/local/netbeans-7.1/java/modules/ext/spring-3.0/spring-oxm-3.0.6.RELEASE.jar:/usr/local/netbeans-7.1/java/modules/ext/spring-3.0/spring-test-3.0.6.RELEASE.jar:/usr/local/netbeans-7.1/java/modules/ext/spring-3.0/spring-tx-3.0.6.RELEASE.jar:/usr/local/netbeans-7.1/java/modules/ext/spring-3.0/spring-web-3.0.6.RELEASE.jar:/usr/local/netbeans-7.1/java/modules/ext/spring-3.0/spring-webmvc-portlet-3.0.6.RELEASE.jar:/usr/local/netbeans-7.1/java/modules/ext/spring-3.0/spring-webmvc-3.0.6.RELEASE.jar:/usr/local/netbeans-7.1/java/modules/ext/spring-3.0/spring-struts-3.0.6.RELEASE.jar" />
+    <property name="libs.jsp-compiler.maven-pom" value="" />
+    <property name="libs.Java-EE-GlassFish-v3.wsinterop" value="" />
+    <property name="libs.spring-webmvc.maven-pom" value="" />
+    <property name="libs.ejb3-persistence.classpath" value="/usr/local/netbeans-7.1/java/modules/ext/hibernate/ejb3-persistence.jar" />
+    <property name="libs.JAXB-ENDORSED.src" value="" />
+    <property name="libs.spring-framework.javadoc" value="" />
+    <property name="libs.PostgreSQLDriver.classpath" value="/usr/local/netbeans-7.1/ide/modules/ext/postgresql-8.3-603.jdbc3.jar" />
+    <property name="libs.jsf12.maven-pom" value="" />
+    <property name="libs.junit.src" value="" />
+    <property name="annotation.processing.source.output" value="build/generated-sources/ap-source-output" />
+    <property name="libs.CopyLibs.src" value="" />
+    <property name="build.dir" value="build" />
+    <property name="libs.jsp-compilation.classpath" value="/usr/local/netbeans-7.1/java/ant/lib/ant.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/servlet3.0-jsp2.2-api.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/glassfish-jspparser-3.0.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/jsf-2_1/jsf-api.jar:/usr/local/netbeans-7.1/enterprise/modules/ext/jstl.jar:/usr/local/netbeans-7.1/java/ant/lib/ant-launcher.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 20 2010" />
+    <property name="file.reference.derby.jar" value="lib/derby.jar" />
+    <property name="j2ee.platform.is.jsr109" value="true" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="build.classes.excludes" value="**/*.java,**/*.form" />
+    <property name="jdkBug6558476" value="false" />
+    <property name="javadoc.nonavbar" value="false" />
+    <property name="platform.active" value="default_platform" />
+    <property name="war.ear.name" value="REM.war" />
+  </properties>
+  <testcase classname="boundary.AgentsFacadeTest" name="testCreate" time="27.009">
+    <error message="Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]" type="javax.persistence.PersistenceException">javax.persistence.PersistenceException: Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:501)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getDatabaseSession(EntityManagerFactoryDelegate.java:188)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:277)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:290)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:268)
+	at testBase.IntegrationBase.getEm(IntegrationBase.java:53)
+	at testBase.IntegrationBase.getAgentFacade(IntegrationBase.java:134)
+	at boundary.AgentsFacadeTest.testCreate(AgentsFacadeTest.java:59)
+Caused by: Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at org.eclipse.persistence.exceptions.ValidationException.cannotAcquireDataSource(ValidationException.java:485)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:109)
+	at org.eclipse.persistence.sessions.DatasourceLogin.connectToDatasource(DatasourceLogin.java:162)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:582)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:206)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:472)
+Caused by: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:518)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:455)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:654)
+	at javax.naming.InitialContext.lookup(InitialContext.java:413)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:103)
+Caused by: javax.naming.NameNotFoundException: webskeleton not found
+	at com.sun.enterprise.naming.impl.TransientContext.doLookup(TransientContext.java:248)
+	at com.sun.enterprise.naming.impl.TransientContext.lookup(TransientContext.java:215)
+	at com.sun.enterprise.naming.impl.SerialContextProviderImpl.lookup(SerialContextProviderImpl.java:77)
+	at com.sun.enterprise.naming.impl.RemoteSerialContextProviderImpl.lookup(RemoteSerialContextProviderImpl.java:94)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie.dispatchToMethod(ReflectiveTie.java:144)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie._invoke(ReflectiveTie.java:174)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatchToServant(CorbaServerRequestDispatcherImpl.java:528)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatch(CorbaServerRequestDispatcherImpl.java:199)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequestRequest(CorbaMessageMediatorImpl.java:1624)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:1486)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleInput(CorbaMessageMediatorImpl.java:990)
+	at com.sun.corba.ee.impl.protocol.giopmsgheaders.RequestMessage_1_2.callback(RequestMessage_1_2.java:214)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:742)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.dispatch(CorbaMessageMediatorImpl.java:539)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.doWork(CorbaMessageMediatorImpl.java:2324)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.performWork(ThreadPoolImpl.java:497)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.run(ThreadPoolImpl.java:540)
+</error>
+  </testcase>
+  <testcase classname="boundary.AgentsFacadeTest" name="testEdit" time="0.379">
+    <error message="Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]" type="javax.persistence.PersistenceException">javax.persistence.PersistenceException: Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:501)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getDatabaseSession(EntityManagerFactoryDelegate.java:188)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:277)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:290)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:268)
+	at testBase.IntegrationBase.getEm(IntegrationBase.java:53)
+	at testBase.IntegrationBase.getCompanyFacade(IntegrationBase.java:105)
+	at testBase.IntegrationBase.getMockCompany(IntegrationBase.java:97)
+	at boundary.AgentsFacadeTest.testEdit(AgentsFacadeTest.java:117)
+Caused by: Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at org.eclipse.persistence.exceptions.ValidationException.cannotAcquireDataSource(ValidationException.java:485)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:109)
+	at org.eclipse.persistence.sessions.DatasourceLogin.connectToDatasource(DatasourceLogin.java:162)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:582)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:206)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:472)
+Caused by: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:518)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:455)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:654)
+	at javax.naming.InitialContext.lookup(InitialContext.java:413)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:103)
+Caused by: javax.naming.NameNotFoundException: webskeleton not found
+	at com.sun.enterprise.naming.impl.TransientContext.doLookup(TransientContext.java:248)
+	at com.sun.enterprise.naming.impl.TransientContext.lookup(TransientContext.java:215)
+	at com.sun.enterprise.naming.impl.SerialContextProviderImpl.lookup(SerialContextProviderImpl.java:77)
+	at com.sun.enterprise.naming.impl.RemoteSerialContextProviderImpl.lookup(RemoteSerialContextProviderImpl.java:94)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie.dispatchToMethod(ReflectiveTie.java:144)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie._invoke(ReflectiveTie.java:174)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatchToServant(CorbaServerRequestDispatcherImpl.java:528)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatch(CorbaServerRequestDispatcherImpl.java:199)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequestRequest(CorbaMessageMediatorImpl.java:1624)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:1486)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleInput(CorbaMessageMediatorImpl.java:990)
+	at com.sun.corba.ee.impl.protocol.giopmsgheaders.RequestMessage_1_2.callback(RequestMessage_1_2.java:214)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:742)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.dispatch(CorbaMessageMediatorImpl.java:539)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.doWork(CorbaMessageMediatorImpl.java:2324)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.performWork(ThreadPoolImpl.java:497)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.run(ThreadPoolImpl.java:540)
+</error>
+  </testcase>
+  <testcase classname="boundary.AgentsFacadeTest" name="testFind" time="0.018">
+    <error message="Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]" type="javax.persistence.PersistenceException">javax.persistence.PersistenceException: Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:501)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getDatabaseSession(EntityManagerFactoryDelegate.java:188)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:277)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:290)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:268)
+	at testBase.IntegrationBase.getEm(IntegrationBase.java:53)
+	at testBase.IntegrationBase.getCompanyFacade(IntegrationBase.java:105)
+	at testBase.IntegrationBase.getMockCompany(IntegrationBase.java:97)
+	at boundary.AgentsFacadeTest.testFind(AgentsFacadeTest.java:142)
+Caused by: Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at org.eclipse.persistence.exceptions.ValidationException.cannotAcquireDataSource(ValidationException.java:485)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:109)
+	at org.eclipse.persistence.sessions.DatasourceLogin.connectToDatasource(DatasourceLogin.java:162)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:582)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:206)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:472)
+Caused by: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:518)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:455)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:654)
+	at javax.naming.InitialContext.lookup(InitialContext.java:413)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:103)
+Caused by: javax.naming.NameNotFoundException: webskeleton not found
+	at com.sun.enterprise.naming.impl.TransientContext.doLookup(TransientContext.java:248)
+	at com.sun.enterprise.naming.impl.TransientContext.lookup(TransientContext.java:215)
+	at com.sun.enterprise.naming.impl.SerialContextProviderImpl.lookup(SerialContextProviderImpl.java:77)
+	at com.sun.enterprise.naming.impl.RemoteSerialContextProviderImpl.lookup(RemoteSerialContextProviderImpl.java:94)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie.dispatchToMethod(ReflectiveTie.java:144)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie._invoke(ReflectiveTie.java:174)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatchToServant(CorbaServerRequestDispatcherImpl.java:528)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatch(CorbaServerRequestDispatcherImpl.java:199)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequestRequest(CorbaMessageMediatorImpl.java:1624)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:1486)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleInput(CorbaMessageMediatorImpl.java:990)
+	at com.sun.corba.ee.impl.protocol.giopmsgheaders.RequestMessage_1_2.callback(RequestMessage_1_2.java:214)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:742)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.dispatch(CorbaMessageMediatorImpl.java:539)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.doWork(CorbaMessageMediatorImpl.java:2324)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.performWork(ThreadPoolImpl.java:497)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.run(ThreadPoolImpl.java:540)
+</error>
+  </testcase>
+  <testcase classname="boundary.AgentsFacadeTest" name="testFindAll" time="0.018">
+    <error message="Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]" type="javax.persistence.PersistenceException">javax.persistence.PersistenceException: Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:501)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getDatabaseSession(EntityManagerFactoryDelegate.java:188)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:277)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:290)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:268)
+	at testBase.IntegrationBase.getEm(IntegrationBase.java:53)
+	at testBase.IntegrationBase.getCompanyFacade(IntegrationBase.java:105)
+	at testBase.IntegrationBase.getMockCompany(IntegrationBase.java:97)
+	at boundary.AgentsFacadeTest.testFindAll(AgentsFacadeTest.java:159)
+Caused by: Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at org.eclipse.persistence.exceptions.ValidationException.cannotAcquireDataSource(ValidationException.java:485)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:109)
+	at org.eclipse.persistence.sessions.DatasourceLogin.connectToDatasource(DatasourceLogin.java:162)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:582)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:206)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:472)
+Caused by: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:518)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:455)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:654)
+	at javax.naming.InitialContext.lookup(InitialContext.java:413)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:103)
+Caused by: javax.naming.NameNotFoundException: webskeleton not found
+	at com.sun.enterprise.naming.impl.TransientContext.doLookup(TransientContext.java:248)
+	at com.sun.enterprise.naming.impl.TransientContext.lookup(TransientContext.java:215)
+	at com.sun.enterprise.naming.impl.SerialContextProviderImpl.lookup(SerialContextProviderImpl.java:77)
+	at com.sun.enterprise.naming.impl.RemoteSerialContextProviderImpl.lookup(RemoteSerialContextProviderImpl.java:94)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie.dispatchToMethod(ReflectiveTie.java:144)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie._invoke(ReflectiveTie.java:174)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatchToServant(CorbaServerRequestDispatcherImpl.java:528)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatch(CorbaServerRequestDispatcherImpl.java:199)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequestRequest(CorbaMessageMediatorImpl.java:1624)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:1486)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleInput(CorbaMessageMediatorImpl.java:990)
+	at com.sun.corba.ee.impl.protocol.giopmsgheaders.RequestMessage_1_2.callback(RequestMessage_1_2.java:214)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:742)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.dispatch(CorbaMessageMediatorImpl.java:539)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.doWork(CorbaMessageMediatorImpl.java:2324)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.performWork(ThreadPoolImpl.java:497)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.run(ThreadPoolImpl.java:540)
+</error>
+  </testcase>
+  <testcase classname="boundary.AgentsFacadeTest" name="testCount" time="0.017">
+    <error message="Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]" type="javax.persistence.PersistenceException">javax.persistence.PersistenceException: Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:501)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getDatabaseSession(EntityManagerFactoryDelegate.java:188)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:277)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:290)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:268)
+	at testBase.IntegrationBase.getEm(IntegrationBase.java:53)
+	at testBase.IntegrationBase.getAgentFacade(IntegrationBase.java:134)
+	at boundary.AgentsFacadeTest.testCount(AgentsFacadeTest.java:174)
+Caused by: Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at org.eclipse.persistence.exceptions.ValidationException.cannotAcquireDataSource(ValidationException.java:485)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:109)
+	at org.eclipse.persistence.sessions.DatasourceLogin.connectToDatasource(DatasourceLogin.java:162)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:582)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:206)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:472)
+Caused by: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:518)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:455)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:654)
+	at javax.naming.InitialContext.lookup(InitialContext.java:413)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:103)
+Caused by: javax.naming.NameNotFoundException: webskeleton not found
+	at com.sun.enterprise.naming.impl.TransientContext.doLookup(TransientContext.java:248)
+	at com.sun.enterprise.naming.impl.TransientContext.lookup(TransientContext.java:215)
+	at com.sun.enterprise.naming.impl.SerialContextProviderImpl.lookup(SerialContextProviderImpl.java:77)
+	at com.sun.enterprise.naming.impl.RemoteSerialContextProviderImpl.lookup(RemoteSerialContextProviderImpl.java:94)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie.dispatchToMethod(ReflectiveTie.java:144)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie._invoke(ReflectiveTie.java:174)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatchToServant(CorbaServerRequestDispatcherImpl.java:528)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatch(CorbaServerRequestDispatcherImpl.java:199)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequestRequest(CorbaMessageMediatorImpl.java:1624)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:1486)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleInput(CorbaMessageMediatorImpl.java:990)
+	at com.sun.corba.ee.impl.protocol.giopmsgheaders.RequestMessage_1_2.callback(RequestMessage_1_2.java:214)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:742)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.dispatch(CorbaMessageMediatorImpl.java:539)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.doWork(CorbaMessageMediatorImpl.java:2324)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.performWork(ThreadPoolImpl.java:497)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.run(ThreadPoolImpl.java:540)
+</error>
+  </testcase>
+  <testcase classname="boundary.AgentsFacadeTest" name="testGetUser" time="0.052">
+    <error message="Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]" type="javax.persistence.PersistenceException">javax.persistence.PersistenceException: Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:501)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getDatabaseSession(EntityManagerFactoryDelegate.java:188)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:277)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:290)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:268)
+	at testBase.IntegrationBase.getEm(IntegrationBase.java:53)
+	at testBase.IntegrationBase.getCompanyFacade(IntegrationBase.java:105)
+	at testBase.IntegrationBase.getMockCompany(IntegrationBase.java:97)
+	at boundary.AgentsFacadeTest.testGetUser(AgentsFacadeTest.java:196)
+Caused by: Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at org.eclipse.persistence.exceptions.ValidationException.cannotAcquireDataSource(ValidationException.java:485)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:109)
+	at org.eclipse.persistence.sessions.DatasourceLogin.connectToDatasource(DatasourceLogin.java:162)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:582)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:206)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:472)
+Caused by: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:518)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:455)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:654)
+	at javax.naming.InitialContext.lookup(InitialContext.java:413)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:103)
+Caused by: javax.naming.NameNotFoundException: webskeleton not found
+	at com.sun.enterprise.naming.impl.TransientContext.doLookup(TransientContext.java:248)
+	at com.sun.enterprise.naming.impl.TransientContext.lookup(TransientContext.java:215)
+	at com.sun.enterprise.naming.impl.SerialContextProviderImpl.lookup(SerialContextProviderImpl.java:77)
+	at com.sun.enterprise.naming.impl.RemoteSerialContextProviderImpl.lookup(RemoteSerialContextProviderImpl.java:94)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie.dispatchToMethod(ReflectiveTie.java:144)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie._invoke(ReflectiveTie.java:174)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatchToServant(CorbaServerRequestDispatcherImpl.java:528)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatch(CorbaServerRequestDispatcherImpl.java:199)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequestRequest(CorbaMessageMediatorImpl.java:1624)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:1486)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleInput(CorbaMessageMediatorImpl.java:990)
+	at com.sun.corba.ee.impl.protocol.giopmsgheaders.RequestMessage_1_2.callback(RequestMessage_1_2.java:214)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:742)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.dispatch(CorbaMessageMediatorImpl.java:539)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.doWork(CorbaMessageMediatorImpl.java:2324)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.performWork(ThreadPoolImpl.java:497)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.run(ThreadPoolImpl.java:540)
+</error>
+  </testcase>
+  <testcase classname="boundary.AgentsFacadeTest" name="testAuthenticate" time="0.056">
+    <error message="Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]" type="javax.persistence.PersistenceException">javax.persistence.PersistenceException: Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:501)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getDatabaseSession(EntityManagerFactoryDelegate.java:188)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:277)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:290)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:268)
+	at testBase.IntegrationBase.getEm(IntegrationBase.java:53)
+	at testBase.IntegrationBase.getAgentFacade(IntegrationBase.java:134)
+	at boundary.AgentsFacadeTest.testAuthenticate(AgentsFacadeTest.java:222)
+Caused by: Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at org.eclipse.persistence.exceptions.ValidationException.cannotAcquireDataSource(ValidationException.java:485)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:109)
+	at org.eclipse.persistence.sessions.DatasourceLogin.connectToDatasource(DatasourceLogin.java:162)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:582)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:206)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:472)
+Caused by: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:518)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:455)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:654)
+	at javax.naming.InitialContext.lookup(InitialContext.java:413)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:103)
+Caused by: javax.naming.NameNotFoundException: webskeleton not found
+	at com.sun.enterprise.naming.impl.TransientContext.doLookup(TransientContext.java:248)
+	at com.sun.enterprise.naming.impl.TransientContext.lookup(TransientContext.java:215)
+	at com.sun.enterprise.naming.impl.SerialContextProviderImpl.lookup(SerialContextProviderImpl.java:77)
+	at com.sun.enterprise.naming.impl.RemoteSerialContextProviderImpl.lookup(RemoteSerialContextProviderImpl.java:94)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie.dispatchToMethod(ReflectiveTie.java:144)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie._invoke(ReflectiveTie.java:174)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatchToServant(CorbaServerRequestDispatcherImpl.java:528)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatch(CorbaServerRequestDispatcherImpl.java:199)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequestRequest(CorbaMessageMediatorImpl.java:1624)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:1486)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleInput(CorbaMessageMediatorImpl.java:990)
+	at com.sun.corba.ee.impl.protocol.giopmsgheaders.RequestMessage_1_2.callback(RequestMessage_1_2.java:214)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:742)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.dispatch(CorbaMessageMediatorImpl.java:539)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.doWork(CorbaMessageMediatorImpl.java:2324)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.performWork(ThreadPoolImpl.java:497)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.run(ThreadPoolImpl.java:540)
+</error>
+  </testcase>
+  <testcase classname="boundary.AgentsFacadeTest" name="testRelationships" time="0.052">
+    <error message="Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]" type="javax.persistence.PersistenceException">javax.persistence.PersistenceException: Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:501)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getDatabaseSession(EntityManagerFactoryDelegate.java:188)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:277)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:290)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:268)
+	at testBase.IntegrationBase.getEm(IntegrationBase.java:53)
+	at testBase.IntegrationBase.getAgentFacade(IntegrationBase.java:134)
+	at boundary.AgentsFacadeTest.testRelationships(AgentsFacadeTest.java:277)
+Caused by: Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at org.eclipse.persistence.exceptions.ValidationException.cannotAcquireDataSource(ValidationException.java:485)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:109)
+	at org.eclipse.persistence.sessions.DatasourceLogin.connectToDatasource(DatasourceLogin.java:162)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:582)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:206)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:472)
+Caused by: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:518)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:455)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:654)
+	at javax.naming.InitialContext.lookup(InitialContext.java:413)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:103)
+Caused by: javax.naming.NameNotFoundException: webskeleton not found
+	at com.sun.enterprise.naming.impl.TransientContext.doLookup(TransientContext.java:248)
+	at com.sun.enterprise.naming.impl.TransientContext.lookup(TransientContext.java:215)
+	at com.sun.enterprise.naming.impl.SerialContextProviderImpl.lookup(SerialContextProviderImpl.java:77)
+	at com.sun.enterprise.naming.impl.RemoteSerialContextProviderImpl.lookup(RemoteSerialContextProviderImpl.java:94)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie.dispatchToMethod(ReflectiveTie.java:144)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie._invoke(ReflectiveTie.java:174)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatchToServant(CorbaServerRequestDispatcherImpl.java:528)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatch(CorbaServerRequestDispatcherImpl.java:199)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequestRequest(CorbaMessageMediatorImpl.java:1624)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:1486)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleInput(CorbaMessageMediatorImpl.java:990)
+	at com.sun.corba.ee.impl.protocol.giopmsgheaders.RequestMessage_1_2.callback(RequestMessage_1_2.java:214)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:742)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.dispatch(CorbaMessageMediatorImpl.java:539)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.doWork(CorbaMessageMediatorImpl.java:2324)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.performWork(ThreadPoolImpl.java:497)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.run(ThreadPoolImpl.java:540)
+</error>
+  </testcase>
+  <testcase classname="boundary.AgentsFacadeTest" name="testRemove" time="0.052">
+    <error message="Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]" type="javax.persistence.PersistenceException">javax.persistence.PersistenceException: Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:501)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getDatabaseSession(EntityManagerFactoryDelegate.java:188)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:277)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:290)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:268)
+	at testBase.IntegrationBase.getEm(IntegrationBase.java:53)
+	at testBase.IntegrationBase.getCompanyFacade(IntegrationBase.java:105)
+	at testBase.IntegrationBase.getMockCompany(IntegrationBase.java:97)
+	at boundary.AgentsFacadeTest.testRemove(AgentsFacadeTest.java:298)
+Caused by: Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at org.eclipse.persistence.exceptions.ValidationException.cannotAcquireDataSource(ValidationException.java:485)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:109)
+	at org.eclipse.persistence.sessions.DatasourceLogin.connectToDatasource(DatasourceLogin.java:162)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:582)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:206)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:472)
+Caused by: javax.naming.NamingException: Lookup failed for &apos;webskeleton&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:518)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:455)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:654)
+	at javax.naming.InitialContext.lookup(InitialContext.java:413)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:103)
+Caused by: javax.naming.NameNotFoundException: webskeleton not found
+	at com.sun.enterprise.naming.impl.TransientContext.doLookup(TransientContext.java:248)
+	at com.sun.enterprise.naming.impl.TransientContext.lookup(TransientContext.java:215)
+	at com.sun.enterprise.naming.impl.SerialContextProviderImpl.lookup(SerialContextProviderImpl.java:77)
+	at com.sun.enterprise.naming.impl.RemoteSerialContextProviderImpl.lookup(RemoteSerialContextProviderImpl.java:94)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie.dispatchToMethod(ReflectiveTie.java:144)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie._invoke(ReflectiveTie.java:174)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatchToServant(CorbaServerRequestDispatcherImpl.java:528)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatch(CorbaServerRequestDispatcherImpl.java:199)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequestRequest(CorbaMessageMediatorImpl.java:1624)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:1486)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleInput(CorbaMessageMediatorImpl.java:990)
+	at com.sun.corba.ee.impl.protocol.giopmsgheaders.RequestMessage_1_2.callback(RequestMessage_1_2.java:214)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:742)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.dispatch(CorbaMessageMediatorImpl.java:539)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.doWork(CorbaMessageMediatorImpl.java:2324)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.performWork(ThreadPoolImpl.java:497)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.run(ThreadPoolImpl.java:540)
+</error>
+  </testcase>
+  <system-out><![CDATA[Agents: Create Test Agent
+[EL Info]: 2012-02-13 16:08:47.986--ServerSession(1860295362)--EclipseLink, version: Eclipse Persistence Services - 2.3.0.v20110604-r9504
+[EL Severe]: 2012-02-13 16:09:12.215--ServerSession(1860295362)--Local Exception Stack: 
+Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for 'webskeleton' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at org.eclipse.persistence.exceptions.ValidationException.cannotAcquireDataSource(ValidationException.java:485)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:109)
+	at org.eclipse.persistence.sessions.DatasourceLogin.connectToDatasource(DatasourceLogin.java:162)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:582)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:206)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:472)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getDatabaseSession(EntityManagerFactoryDelegate.java:188)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:277)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:290)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:268)
+	at testBase.IntegrationBase.getEm(IntegrationBase.java:53)
+	at testBase.IntegrationBase.getAgentFacade(IntegrationBase.java:134)
+	at boundary.AgentsFacadeTest.testCreate(AgentsFacadeTest.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:39)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:518)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1052)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:906)
+Caused by: javax.naming.NamingException: Lookup failed for 'webskeleton' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:518)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:455)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:654)
+	at javax.naming.InitialContext.lookup(InitialContext.java:413)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:103)
+	... 36 more
+Caused by: javax.naming.NameNotFoundException: webskeleton not found
+	at com.sun.enterprise.naming.impl.TransientContext.doLookup(TransientContext.java:248)
+	at com.sun.enterprise.naming.impl.TransientContext.lookup(TransientContext.java:215)
+	at com.sun.enterprise.naming.impl.SerialContextProviderImpl.lookup(SerialContextProviderImpl.java:77)
+	at com.sun.enterprise.naming.impl.RemoteSerialContextProviderImpl.lookup(RemoteSerialContextProviderImpl.java:94)
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie.dispatchToMethod(ReflectiveTie.java:144)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie._invoke(ReflectiveTie.java:174)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatchToServant(CorbaServerRequestDispatcherImpl.java:528)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatch(CorbaServerRequestDispatcherImpl.java:199)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequestRequest(CorbaMessageMediatorImpl.java:1624)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:1486)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleInput(CorbaMessageMediatorImpl.java:990)
+	at com.sun.corba.ee.impl.protocol.giopmsgheaders.RequestMessage_1_2.callback(RequestMessage_1_2.java:214)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:742)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.dispatch(CorbaMessageMediatorImpl.java:539)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.doWork(CorbaMessageMediatorImpl.java:2324)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.performWork(ThreadPoolImpl.java:497)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.run(ThreadPoolImpl.java:540)
+
+Agents: edit
+[EL Info]: 2012-02-13 16:09:13.234--ServerSession(1860295362)--EclipseLink, version: Eclipse Persistence Services - 2.3.0.v20110604-r9504
+[EL Severe]: 2012-02-13 16:09:13.242--ServerSession(1860295362)--Local Exception Stack: 
+Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for 'webskeleton' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at org.eclipse.persistence.exceptions.ValidationException.cannotAcquireDataSource(ValidationException.java:485)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:109)
+	at org.eclipse.persistence.sessions.DatasourceLogin.connectToDatasource(DatasourceLogin.java:162)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:582)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:206)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:472)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getDatabaseSession(EntityManagerFactoryDelegate.java:188)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:277)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:290)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:268)
+	at testBase.IntegrationBase.getEm(IntegrationBase.java:53)
+	at testBase.IntegrationBase.getCompanyFacade(IntegrationBase.java:105)
+	at testBase.IntegrationBase.getMockCompany(IntegrationBase.java:97)
+	at boundary.AgentsFacadeTest.testEdit(AgentsFacadeTest.java:117)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:39)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:518)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1052)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:906)
+Caused by: javax.naming.NamingException: Lookup failed for 'webskeleton' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:518)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:455)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:654)
+	at javax.naming.InitialContext.lookup(InitialContext.java:413)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:103)
+	... 37 more
+Caused by: javax.naming.NameNotFoundException: webskeleton not found
+	at com.sun.enterprise.naming.impl.TransientContext.doLookup(TransientContext.java:248)
+	at com.sun.enterprise.naming.impl.TransientContext.lookup(TransientContext.java:215)
+	at com.sun.enterprise.naming.impl.SerialContextProviderImpl.lookup(SerialContextProviderImpl.java:77)
+	at com.sun.enterprise.naming.impl.RemoteSerialContextProviderImpl.lookup(RemoteSerialContextProviderImpl.java:94)
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie.dispatchToMethod(ReflectiveTie.java:144)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie._invoke(ReflectiveTie.java:174)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatchToServant(CorbaServerRequestDispatcherImpl.java:528)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatch(CorbaServerRequestDispatcherImpl.java:199)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequestRequest(CorbaMessageMediatorImpl.java:1624)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:1486)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleInput(CorbaMessageMediatorImpl.java:990)
+	at com.sun.corba.ee.impl.protocol.giopmsgheaders.RequestMessage_1_2.callback(RequestMessage_1_2.java:214)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:742)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.dispatch(CorbaMessageMediatorImpl.java:539)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.doWork(CorbaMessageMediatorImpl.java:2324)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.performWork(ThreadPoolImpl.java:497)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.run(ThreadPoolImpl.java:540)
+
+Agents: find
+[EL Info]: 2012-02-13 16:09:16.089--ServerSession(1860295362)--EclipseLink, version: Eclipse Persistence Services - 2.3.0.v20110604-r9504
+[EL Severe]: 2012-02-13 16:09:16.097--ServerSession(1860295362)--Local Exception Stack: 
+Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for 'webskeleton' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at org.eclipse.persistence.exceptions.ValidationException.cannotAcquireDataSource(ValidationException.java:485)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:109)
+	at org.eclipse.persistence.sessions.DatasourceLogin.connectToDatasource(DatasourceLogin.java:162)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:582)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:206)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:472)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getDatabaseSession(EntityManagerFactoryDelegate.java:188)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:277)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:290)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:268)
+	at testBase.IntegrationBase.getEm(IntegrationBase.java:53)
+	at testBase.IntegrationBase.getCompanyFacade(IntegrationBase.java:105)
+	at testBase.IntegrationBase.getMockCompany(IntegrationBase.java:97)
+	at boundary.AgentsFacadeTest.testFind(AgentsFacadeTest.java:142)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:39)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:518)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1052)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:906)
+Caused by: javax.naming.NamingException: Lookup failed for 'webskeleton' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:518)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:455)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:654)
+	at javax.naming.InitialContext.lookup(InitialContext.java:413)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:103)
+	... 37 more
+Caused by: javax.naming.NameNotFoundException: webskeleton not found
+	at com.sun.enterprise.naming.impl.TransientContext.doLookup(TransientContext.java:248)
+	at com.sun.enterprise.naming.impl.TransientContext.lookup(TransientContext.java:215)
+	at com.sun.enterprise.naming.impl.SerialContextProviderImpl.lookup(SerialContextProviderImpl.java:77)
+	at com.sun.enterprise.naming.impl.RemoteSerialContextProviderImpl.lookup(RemoteSerialContextProviderImpl.java:94)
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie.dispatchToMethod(ReflectiveTie.java:144)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie._invoke(ReflectiveTie.java:174)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatchToServant(CorbaServerRequestDispatcherImpl.java:528)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatch(CorbaServerRequestDispatcherImpl.java:199)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequestRequest(CorbaMessageMediatorImpl.java:1624)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:1486)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleInput(CorbaMessageMediatorImpl.java:990)
+	at com.sun.corba.ee.impl.protocol.giopmsgheaders.RequestMessage_1_2.callback(RequestMessage_1_2.java:214)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:742)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.dispatch(CorbaMessageMediatorImpl.java:539)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.doWork(CorbaMessageMediatorImpl.java:2324)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.performWork(ThreadPoolImpl.java:497)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.run(ThreadPoolImpl.java:540)
+
+Agents: findAll
+[EL Info]: 2012-02-13 16:09:17.347--ServerSession(1860295362)--EclipseLink, version: Eclipse Persistence Services - 2.3.0.v20110604-r9504
+[EL Severe]: 2012-02-13 16:09:17.354--ServerSession(1860295362)--Local Exception Stack: 
+Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for 'webskeleton' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at org.eclipse.persistence.exceptions.ValidationException.cannotAcquireDataSource(ValidationException.java:485)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:109)
+	at org.eclipse.persistence.sessions.DatasourceLogin.connectToDatasource(DatasourceLogin.java:162)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:582)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:206)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:472)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getDatabaseSession(EntityManagerFactoryDelegate.java:188)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:277)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:290)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:268)
+	at testBase.IntegrationBase.getEm(IntegrationBase.java:53)
+	at testBase.IntegrationBase.getCompanyFacade(IntegrationBase.java:105)
+	at testBase.IntegrationBase.getMockCompany(IntegrationBase.java:97)
+	at boundary.AgentsFacadeTest.testFindAll(AgentsFacadeTest.java:159)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:39)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:518)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1052)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:906)
+Caused by: javax.naming.NamingException: Lookup failed for 'webskeleton' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:518)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:455)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:654)
+	at javax.naming.InitialContext.lookup(InitialContext.java:413)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:103)
+	... 37 more
+Caused by: javax.naming.NameNotFoundException: webskeleton not found
+	at com.sun.enterprise.naming.impl.TransientContext.doLookup(TransientContext.java:248)
+	at com.sun.enterprise.naming.impl.TransientContext.lookup(TransientContext.java:215)
+	at com.sun.enterprise.naming.impl.SerialContextProviderImpl.lookup(SerialContextProviderImpl.java:77)
+	at com.sun.enterprise.naming.impl.RemoteSerialContextProviderImpl.lookup(RemoteSerialContextProviderImpl.java:94)
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie.dispatchToMethod(ReflectiveTie.java:144)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie._invoke(ReflectiveTie.java:174)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatchToServant(CorbaServerRequestDispatcherImpl.java:528)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatch(CorbaServerRequestDispatcherImpl.java:199)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequestRequest(CorbaMessageMediatorImpl.java:1624)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:1486)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleInput(CorbaMessageMediatorImpl.java:990)
+	at com.sun.corba.ee.impl.protocol.giopmsgheaders.RequestMessage_1_2.callback(RequestMessage_1_2.java:214)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:742)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.dispatch(CorbaMessageMediatorImpl.java:539)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.doWork(CorbaMessageMediatorImpl.java:2324)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.performWork(ThreadPoolImpl.java:497)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.run(ThreadPoolImpl.java:540)
+
+Agents: count
+[EL Info]: 2012-02-13 16:09:18.189--ServerSession(1860295362)--EclipseLink, version: Eclipse Persistence Services - 2.3.0.v20110604-r9504
+[EL Severe]: 2012-02-13 16:09:18.196--ServerSession(1860295362)--Local Exception Stack: 
+Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for 'webskeleton' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at org.eclipse.persistence.exceptions.ValidationException.cannotAcquireDataSource(ValidationException.java:485)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:109)
+	at org.eclipse.persistence.sessions.DatasourceLogin.connectToDatasource(DatasourceLogin.java:162)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:582)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:206)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:472)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getDatabaseSession(EntityManagerFactoryDelegate.java:188)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:277)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:290)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:268)
+	at testBase.IntegrationBase.getEm(IntegrationBase.java:53)
+	at testBase.IntegrationBase.getAgentFacade(IntegrationBase.java:134)
+	at boundary.AgentsFacadeTest.testCount(AgentsFacadeTest.java:174)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:39)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:518)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1052)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:906)
+Caused by: javax.naming.NamingException: Lookup failed for 'webskeleton' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:518)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:455)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:654)
+	at javax.naming.InitialContext.lookup(InitialContext.java:413)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:103)
+	... 36 more
+Caused by: javax.naming.NameNotFoundException: webskeleton not found
+	at com.sun.enterprise.naming.impl.TransientContext.doLookup(TransientContext.java:248)
+	at com.sun.enterprise.naming.impl.TransientContext.lookup(TransientContext.java:215)
+	at com.sun.enterprise.naming.impl.SerialContextProviderImpl.lookup(SerialContextProviderImpl.java:77)
+	at com.sun.enterprise.naming.impl.RemoteSerialContextProviderImpl.lookup(RemoteSerialContextProviderImpl.java:94)
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie.dispatchToMethod(ReflectiveTie.java:144)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie._invoke(ReflectiveTie.java:174)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatchToServant(CorbaServerRequestDispatcherImpl.java:528)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatch(CorbaServerRequestDispatcherImpl.java:199)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequestRequest(CorbaMessageMediatorImpl.java:1624)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:1486)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleInput(CorbaMessageMediatorImpl.java:990)
+	at com.sun.corba.ee.impl.protocol.giopmsgheaders.RequestMessage_1_2.callback(RequestMessage_1_2.java:214)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:742)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.dispatch(CorbaMessageMediatorImpl.java:539)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.doWork(CorbaMessageMediatorImpl.java:2324)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.performWork(ThreadPoolImpl.java:497)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.run(ThreadPoolImpl.java:540)
+
+Agents: getUser
+[EL Info]: 2012-02-13 16:09:18.206--ServerSession(1860295362)--EclipseLink, version: Eclipse Persistence Services - 2.3.0.v20110604-r9504
+[EL Severe]: 2012-02-13 16:09:18.249--ServerSession(1860295362)--Local Exception Stack: 
+Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for 'webskeleton' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at org.eclipse.persistence.exceptions.ValidationException.cannotAcquireDataSource(ValidationException.java:485)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:109)
+	at org.eclipse.persistence.sessions.DatasourceLogin.connectToDatasource(DatasourceLogin.java:162)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:582)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:206)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:472)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getDatabaseSession(EntityManagerFactoryDelegate.java:188)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:277)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:290)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:268)
+	at testBase.IntegrationBase.getEm(IntegrationBase.java:53)
+	at testBase.IntegrationBase.getCompanyFacade(IntegrationBase.java:105)
+	at testBase.IntegrationBase.getMockCompany(IntegrationBase.java:97)
+	at boundary.AgentsFacadeTest.testGetUser(AgentsFacadeTest.java:196)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:39)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:518)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1052)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:906)
+Caused by: javax.naming.NamingException: Lookup failed for 'webskeleton' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:518)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:455)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:654)
+	at javax.naming.InitialContext.lookup(InitialContext.java:413)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:103)
+	... 37 more
+Caused by: javax.naming.NameNotFoundException: webskeleton not found
+	at com.sun.enterprise.naming.impl.TransientContext.doLookup(TransientContext.java:248)
+	at com.sun.enterprise.naming.impl.TransientContext.lookup(TransientContext.java:215)
+	at com.sun.enterprise.naming.impl.SerialContextProviderImpl.lookup(SerialContextProviderImpl.java:77)
+	at com.sun.enterprise.naming.impl.RemoteSerialContextProviderImpl.lookup(RemoteSerialContextProviderImpl.java:94)
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie.dispatchToMethod(ReflectiveTie.java:144)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie._invoke(ReflectiveTie.java:174)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatchToServant(CorbaServerRequestDispatcherImpl.java:528)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatch(CorbaServerRequestDispatcherImpl.java:199)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequestRequest(CorbaMessageMediatorImpl.java:1624)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:1486)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleInput(CorbaMessageMediatorImpl.java:990)
+	at com.sun.corba.ee.impl.protocol.giopmsgheaders.RequestMessage_1_2.callback(RequestMessage_1_2.java:214)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:742)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.dispatch(CorbaMessageMediatorImpl.java:539)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.doWork(CorbaMessageMediatorImpl.java:2324)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.performWork(ThreadPoolImpl.java:497)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.run(ThreadPoolImpl.java:540)
+
+Agents: authenticate
+[EL Info]: 2012-02-13 16:09:18.26--ServerSession(1860295362)--EclipseLink, version: Eclipse Persistence Services - 2.3.0.v20110604-r9504
+[EL Severe]: 2012-02-13 16:09:18.305--ServerSession(1860295362)--Local Exception Stack: 
+Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for 'webskeleton' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at org.eclipse.persistence.exceptions.ValidationException.cannotAcquireDataSource(ValidationException.java:485)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:109)
+	at org.eclipse.persistence.sessions.DatasourceLogin.connectToDatasource(DatasourceLogin.java:162)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:582)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:206)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:472)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getDatabaseSession(EntityManagerFactoryDelegate.java:188)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:277)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:290)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:268)
+	at testBase.IntegrationBase.getEm(IntegrationBase.java:53)
+	at testBase.IntegrationBase.getAgentFacade(IntegrationBase.java:134)
+	at boundary.AgentsFacadeTest.testAuthenticate(AgentsFacadeTest.java:222)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:39)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:518)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1052)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:906)
+Caused by: javax.naming.NamingException: Lookup failed for 'webskeleton' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:518)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:455)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:654)
+	at javax.naming.InitialContext.lookup(InitialContext.java:413)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:103)
+	... 36 more
+Caused by: javax.naming.NameNotFoundException: webskeleton not found
+	at com.sun.enterprise.naming.impl.TransientContext.doLookup(TransientContext.java:248)
+	at com.sun.enterprise.naming.impl.TransientContext.lookup(TransientContext.java:215)
+	at com.sun.enterprise.naming.impl.SerialContextProviderImpl.lookup(SerialContextProviderImpl.java:77)
+	at com.sun.enterprise.naming.impl.RemoteSerialContextProviderImpl.lookup(RemoteSerialContextProviderImpl.java:94)
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie.dispatchToMethod(ReflectiveTie.java:144)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie._invoke(ReflectiveTie.java:174)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatchToServant(CorbaServerRequestDispatcherImpl.java:528)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatch(CorbaServerRequestDispatcherImpl.java:199)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequestRequest(CorbaMessageMediatorImpl.java:1624)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:1486)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleInput(CorbaMessageMediatorImpl.java:990)
+	at com.sun.corba.ee.impl.protocol.giopmsgheaders.RequestMessage_1_2.callback(RequestMessage_1_2.java:214)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:742)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.dispatch(CorbaMessageMediatorImpl.java:539)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.doWork(CorbaMessageMediatorImpl.java:2324)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.performWork(ThreadPoolImpl.java:497)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.run(ThreadPoolImpl.java:540)
+
+[EL Info]: 2012-02-13 16:09:18.314--ServerSession(1860295362)--EclipseLink, version: Eclipse Persistence Services - 2.3.0.v20110604-r9504
+[EL Severe]: 2012-02-13 16:09:18.356--ServerSession(1860295362)--Local Exception Stack: 
+Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for 'webskeleton' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at org.eclipse.persistence.exceptions.ValidationException.cannotAcquireDataSource(ValidationException.java:485)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:109)
+	at org.eclipse.persistence.sessions.DatasourceLogin.connectToDatasource(DatasourceLogin.java:162)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:582)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:206)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:472)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getDatabaseSession(EntityManagerFactoryDelegate.java:188)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:277)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:290)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:268)
+	at testBase.IntegrationBase.getEm(IntegrationBase.java:53)
+	at testBase.IntegrationBase.getAgentFacade(IntegrationBase.java:134)
+	at boundary.AgentsFacadeTest.testRelationships(AgentsFacadeTest.java:277)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:39)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:518)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1052)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:906)
+Caused by: javax.naming.NamingException: Lookup failed for 'webskeleton' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:518)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:455)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:654)
+	at javax.naming.InitialContext.lookup(InitialContext.java:413)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:103)
+	... 36 more
+Caused by: javax.naming.NameNotFoundException: webskeleton not found
+	at com.sun.enterprise.naming.impl.TransientContext.doLookup(TransientContext.java:248)
+	at com.sun.enterprise.naming.impl.TransientContext.lookup(TransientContext.java:215)
+	at com.sun.enterprise.naming.impl.SerialContextProviderImpl.lookup(SerialContextProviderImpl.java:77)
+	at com.sun.enterprise.naming.impl.RemoteSerialContextProviderImpl.lookup(RemoteSerialContextProviderImpl.java:94)
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie.dispatchToMethod(ReflectiveTie.java:144)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie._invoke(ReflectiveTie.java:174)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatchToServant(CorbaServerRequestDispatcherImpl.java:528)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatch(CorbaServerRequestDispatcherImpl.java:199)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequestRequest(CorbaMessageMediatorImpl.java:1624)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:1486)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleInput(CorbaMessageMediatorImpl.java:990)
+	at com.sun.corba.ee.impl.protocol.giopmsgheaders.RequestMessage_1_2.callback(RequestMessage_1_2.java:214)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:742)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.dispatch(CorbaMessageMediatorImpl.java:539)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.doWork(CorbaMessageMediatorImpl.java:2324)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.performWork(ThreadPoolImpl.java:497)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.run(ThreadPoolImpl.java:540)
+
+Agents: remove
+[EL Info]: 2012-02-13 16:09:18.366--ServerSession(1860295362)--EclipseLink, version: Eclipse Persistence Services - 2.3.0.v20110604-r9504
+[EL Severe]: 2012-02-13 16:09:18.408--ServerSession(1860295362)--Local Exception Stack: 
+Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.3.0.v20110604-r9504): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [webskeleton].
+Internal Exception: javax.naming.NamingException: Lookup failed for 'webskeleton' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at org.eclipse.persistence.exceptions.ValidationException.cannotAcquireDataSource(ValidationException.java:485)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:109)
+	at org.eclipse.persistence.sessions.DatasourceLogin.connectToDatasource(DatasourceLogin.java:162)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:582)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:206)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:472)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getDatabaseSession(EntityManagerFactoryDelegate.java:188)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:277)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:290)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:268)
+	at testBase.IntegrationBase.getEm(IntegrationBase.java:53)
+	at testBase.IntegrationBase.getCompanyFacade(IntegrationBase.java:105)
+	at testBase.IntegrationBase.getMockCompany(IntegrationBase.java:97)
+	at boundary.AgentsFacadeTest.testRemove(AgentsFacadeTest.java:298)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:39)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:518)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1052)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:906)
+Caused by: javax.naming.NamingException: Lookup failed for 'webskeleton' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NameNotFoundException: webskeleton not found]
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:518)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:455)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:654)
+	at javax.naming.InitialContext.lookup(InitialContext.java:413)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:103)
+	... 37 more
+Caused by: javax.naming.NameNotFoundException: webskeleton not found
+	at com.sun.enterprise.naming.impl.TransientContext.doLookup(TransientContext.java:248)
+	at com.sun.enterprise.naming.impl.TransientContext.lookup(TransientContext.java:215)
+	at com.sun.enterprise.naming.impl.SerialContextProviderImpl.lookup(SerialContextProviderImpl.java:77)
+	at com.sun.enterprise.naming.impl.RemoteSerialContextProviderImpl.lookup(RemoteSerialContextProviderImpl.java:94)
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie.dispatchToMethod(ReflectiveTie.java:144)
+	at com.sun.corba.ee.impl.presentation.rmi.ReflectiveTie._invoke(ReflectiveTie.java:174)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatchToServant(CorbaServerRequestDispatcherImpl.java:528)
+	at com.sun.corba.ee.impl.protocol.CorbaServerRequestDispatcherImpl.dispatch(CorbaServerRequestDispatcherImpl.java:199)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequestRequest(CorbaMessageMediatorImpl.java:1624)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:1486)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleInput(CorbaMessageMediatorImpl.java:990)
+	at com.sun.corba.ee.impl.protocol.giopmsgheaders.RequestMessage_1_2.callback(RequestMessage_1_2.java:214)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.handleRequest(CorbaMessageMediatorImpl.java:742)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.dispatch(CorbaMessageMediatorImpl.java:539)
+	at com.sun.corba.ee.impl.protocol.CorbaMessageMediatorImpl.doWork(CorbaMessageMediatorImpl.java:2324)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.performWork(ThreadPoolImpl.java:497)
+	at com.sun.corba.ee.impl.orbutil.threadpool.ThreadPoolImpl$WorkerThread.run(ThreadPoolImpl.java:540)
+
+]]></system-out>
+  <system-err><![CDATA[Feb 13, 2012 4:08:47 PM org.hibernate.validator.util.Version <clinit>
+INFO: Hibernate Validator 4.1.0.Final
+Feb 13, 2012 4:08:47 PM org.hibernate.validator.engine.resolver.DefaultTraversableResolver detectJPA
+INFO: Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+Feb 13, 2012 4:09:00 PM com.sun.enterprise.v3.server.CommonClassLoaderServiceImpl findDerbyClient
+INFO: Cannot find javadb client jar file, derby jdbc driver will not be available by default.
+]]></system-err>
+</testsuite>

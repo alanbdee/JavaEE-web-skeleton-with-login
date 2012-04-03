@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.ViewCompaniesTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputText value="#{bundle.ViewCompaniesLabel_id}"/>
+                    <h:outputText value="#{companiesController.selected.id}" title="#{bundle.ViewCompaniesTitle_id}"/>
+                    <h:outputText value="#{bundle.ViewCompaniesLabel_created}"/>
+                    <h:outputText value="#{companiesController.selected.created}" title="#{bundle.ViewCompaniesTitle_created}"/>
+                    <h:outputText value="#{bundle.ViewCompaniesLabel_name}"/>
+                    <h:outputText value="#{companiesController.selected.name}" title="#{bundle.ViewCompaniesTitle_name}"/>
+                    <h:outputText value="#{bundle.ViewCompaniesLabel_schema}"/>
+                    <h:outputText value="#{companiesController.selected.schema}" title="#{bundle.ViewCompaniesTitle_schema}"/>
+                    <h:outputText value="#{bundle.ViewCompaniesLabel_serviceEnd}"/>
+                    <h:outputText value="#{companiesController.selected.serviceEnd}" title="#{bundle.ViewCompaniesTitle_serviceEnd}"/>
+                    <h:outputText value="#{bundle.ViewCompaniesLabel_serviceStart}"/>
+                    <h:outputText value="#{companiesController.selected.serviceStart}" title="#{bundle.ViewCompaniesTitle_serviceStart}"/>
+                    <h:outputText value="#{bundle.ViewCompaniesLabel_slogan}"/>
+                    <h:outputText value="#{companiesController.selected.slogan}" title="#{bundle.ViewCompaniesTitle_slogan}"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{companiesController.destroyAndView}" value="#{bundle.ViewCompaniesDestroyLink}"/>
+                <br />
+                <br />
+                <h:commandLink action="Edit" value="#{bundle.ViewCompaniesEditLink}"/>
+                <br />
+                <h:commandLink action="#{companiesController.prepareCreate}" value="#{bundle.ViewCompaniesCreateLink}" />
+                <br />
+                <h:commandLink action="#{companiesController.prepareList}" value="#{bundle.ViewCompaniesShowAllLink}"/>
+                <br />
+                <br />
+                <h:commandLink value="#{bundle.ViewCompaniesIndexLink}" action="/index" immediate="true" />
+
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

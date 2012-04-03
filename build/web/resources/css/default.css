@@ -1,0 +1,10 @@
+.container_box{
+    padding:3px;
+    margin: 3px auto;
+}
+
+.ui-icon-exit {
+    width:16px;
+    height:16px;
+    background-image: url(#{resource['images:icons/exit.png']});
+}

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <title>Facelet Title</title>
+        <h:outputStylesheet name="css/jsfcrud.css"/>
+    </h:head>
+    <h:body>
+        <ui:composition template="template.xhtml">
+            <ui:param name="title" value="Here's my Title"/>
+            <ui:define name="menu">Here's My Menu
+            </ui:define>
+            <ui:define name="body">Here's My Body</ui:define>
+        </ui:composition>
+
+                <h:form>
+                    <h:commandLink action="/documents/agentDocuments/List" value="Show All AgentDocuments Items"/>
+                </h:form>
+                <h:form>
+                    <h:commandLink action="/documents/companyDocuments/List" value="Show All CompanyDocuments Items"/>
+                </h:form>
+                <h:form>
+                    <h:commandLink action="/documents/documents/List" value="Show All Documents Items"/>
+                </h:form>
+</h:body>
+
+
+
+
+
+</html>
+

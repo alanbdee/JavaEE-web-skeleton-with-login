@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.ListAgentsTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:form styleClass="jsfcrud_list_form">
+                <h:panelGroup id="messagePanel" layout="block">
+                    <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+                </h:panelGroup>
+                <h:outputText escape="false" value="#{bundle.ListAgentsEmpty}" rendered="#{agentsController.items.rowCount == 0}"/>
+                <h:panelGroup rendered="#{agentsController.items.rowCount > 0}">
+                    <h:outputText value="#{agentsController.pagination.pageFirstItem + 1}..#{agentsController.pagination.pageLastItem + 1}/#{agentsController.pagination.itemsCount}"/>&nbsp;
+                    <h:commandLink action="#{agentsController.previous}" value="#{bundle.Previous} #{agentsController.pagination.pageSize}" rendered="#{agentsController.pagination.hasPreviousPage}"/>&nbsp;
+                    <h:commandLink action="#{agentsController.next}" value="#{bundle.Next} #{agentsController.pagination.pageSize}" rendered="#{agentsController.pagination.hasNextPage}"/>&nbsp;
+                    <h:dataTable value="#{agentsController.items}" var="item" border="0" cellpadding="2" cellspacing="0" rowClasses="jsfcrud_odd_row,jsfcrud_even_row" rules="all" style="border:solid 1px">
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListAgentsTitle_id}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.id}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="&nbsp;"/>
+                            </f:facet>
+                            <h:commandLink action="#{agentsController.prepareView}" value="#{bundle.ListAgentsViewLink}"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{agentsController.prepareEdit}" value="#{bundle.ListAgentsEditLink}"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{agentsController.destroy}" value="#{bundle.ListAgentsDestroyLink}"/>
+                        </h:column>
+                    </h:dataTable>
+                </h:panelGroup>
+                <br />
+                <h:commandLink action="#{agentsController.prepareCreate}" value="#{bundle.ListAgentsCreateLink}"/>
+                <br />
+                <br />
+                <h:commandLink value="#{bundle.ListAgentsIndexLink}" action="/index" immediate="true" />
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

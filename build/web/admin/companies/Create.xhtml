@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.CreateCompaniesTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:form>
+                <p:tabView>
+                    <p:tab title="Create Companies">
+                        <h:panelGrid columns="2">
+                            <h:outputLabel value="#{bundle.CreateCompaniesLabel_created}" for="created" />
+                            <h:inputText id="created" value="#{companiesController.selected.created}" title="#{bundle.CreateCompaniesTitle_created}" />
+                            <h:outputLabel value="#{bundle.CreateCompaniesLabel_name}" for="name" />
+                            <h:inputText id="name" value="#{companiesController.selected.name}" title="#{bundle.CreateCompaniesTitle_name}" />
+                            <h:outputLabel value="#{bundle.CreateCompaniesLabel_schema}" for="schema" />
+                            <h:inputText id="schema" value="#{companiesController.selected.schema}" title="#{bundle.CreateCompaniesTitle_schema}" />
+                            <h:outputLabel value="#{bundle.CreateCompaniesLabel_serviceEnd}" for="serviceEnd" />
+                            <h:inputText id="serviceEnd" value="#{companiesController.selected.serviceEnd}" title="#{bundle.CreateCompaniesTitle_serviceEnd}" />
+                            <h:outputLabel value="#{bundle.CreateCompaniesLabel_serviceStart}" for="serviceStart" />
+                            <h:inputText id="serviceStart" value="#{companiesController.selected.serviceStart}" title="#{bundle.CreateCompaniesTitle_serviceStart}" />
+                            <h:outputLabel value="#{bundle.CreateCompaniesLabel_slogan}" for="slogan" />
+                            <h:inputText id="slogan" value="#{companiesController.selected.slogan}" title="#{bundle.CreateCompaniesTitle_slogan}" />
+                        </h:panelGrid>
+                        <br />
+                        <h:commandLink action="#{companiesController.create}" value="#{bundle.CreateCompaniesSaveLink}" />
+                        <br />
+                        <br />
+                        <h:commandLink action="#{companiesController.prepareList}" value="#{bundle.CreateCompaniesShowAllLink}" immediate="true"/>
+                        <br />
+                        <br />
+                        <h:commandLink value="#{bundle.CreateCompaniesIndexLink}" action="/index" immediate="true" />
+                    </p:tab>
+                </p:tabView>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.EditCompaniesTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.EditCompaniesLabel_id}" for="id" />
+                    <h:inputText id="id" value="#{companiesController.selected.id}" title="#{bundle.EditCompaniesTitle_id}" />
+                    <h:outputLabel value="#{bundle.EditCompaniesLabel_created}" for="created" />
+                    <h:inputText id="created" value="#{companiesController.selected.created}" title="#{bundle.EditCompaniesTitle_created}" />
+                    <h:outputLabel value="#{bundle.EditCompaniesLabel_name}" for="name" />
+                    <h:inputText id="name" value="#{companiesController.selected.name}" title="#{bundle.EditCompaniesTitle_name}" />
+                    <h:outputLabel value="#{bundle.EditCompaniesLabel_schema}" for="schema" />
+                    <h:inputText id="schema" value="#{companiesController.selected.schema}" title="#{bundle.EditCompaniesTitle_schema}" />
+                    <h:outputLabel value="#{bundle.EditCompaniesLabel_serviceEnd}" for="serviceEnd" />
+                    <h:inputText id="serviceEnd" value="#{companiesController.selected.serviceEnd}" title="#{bundle.EditCompaniesTitle_serviceEnd}" />
+                    <h:outputLabel value="#{bundle.EditCompaniesLabel_serviceStart}" for="serviceStart" />
+                    <h:inputText id="serviceStart" value="#{companiesController.selected.serviceStart}" title="#{bundle.EditCompaniesTitle_serviceStart}" />
+                    <h:outputLabel value="#{bundle.EditCompaniesLabel_slogan}" for="slogan" />
+                    <h:inputText id="slogan" value="#{companiesController.selected.slogan}" title="#{bundle.EditCompaniesTitle_slogan}" />
+                </h:panelGrid>
+                <h:commandLink action="#{companiesController.update}" value="#{bundle.EditCompaniesSaveLink}"/>
+                <br />
+                <br />
+                <h:commandLink action="View" value="#{bundle.EditCompaniesViewLink}" immediate="true"/>
+                <br />
+                <h:commandLink action="#{companiesController.prepareList}" value="#{bundle.EditCompaniesShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:commandLink value="#{bundle.EditCompaniesIndexLink}" action="/index" immediate="true" />
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

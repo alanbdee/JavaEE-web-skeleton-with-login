@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <title>Facelet Title</title>
+<!--        <h:outputStylesheet name="css/jsfcrud.css"/>-->
+    </h:head>
+    <h:body>
+        <ui:composition template="/template.xhtml">
+            <ui:param name="title" value="Here's my Title"/>
+            <ui:define name="menu">Here's My Menu</ui:define>
+            <ui:define name="body">
+                <h:form>
+                    <p:tabView dynamic="true" cache="true">
+                        <p:tab title="Company">
+                            <h:panelGrid columns="2" cellpadding="10">
+                                <ui:include src="/WEB-INF/templates/document_grid.xhtml">
+                                    <ui:param name="Group" value="COMPANY" />
+                                </ui:include>
+                            </h:panelGrid>
+                        </p:tab>
+
+                        <p:tab title="Personal">
+                            <h:panelGrid columns="2" cellpadding="10">
+                                <ui:include src="/WEB-INF/templates/document_grid.xhtml">
+                                    <ui:param name="Group" value="AGENTS" />
+                                </ui:include>
+                            </h:panelGrid>
+                        </p:tab>
+
+                        <p:tab title="Client">
+                            <h:panelGrid columns="2" cellpadding="10">
+                            </h:panelGrid>
+                        </p:tab>
+
+                    </p:tabView>
+                </h:form>
+            </ui:define>
+        </ui:composition>
+
+    </h:body>
+
+
+</html>
+

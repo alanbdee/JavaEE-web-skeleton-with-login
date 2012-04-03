@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+      >
+    <h:head>
+        <title>Facelet Title</title>
+        <!--        <h:outputStylesheet name="css/jsfcrud.css"/>-->
+    </h:head>
+    <h:body>
+        <h:form enctype="multipart/form-data">
+            <p:panel header="Document Information">
+                <h:panelGrid columns="2">
+                    <h:outputText value="Type: " />
+                        <p:selectOneRadio id="doctype" value="#{documentController.type}">
+                            <f:selectItem itemLabel="Company" itemValue="COMPANY"/>
+                            <f:selectItem itemLabel="Personal" itemValue="AGENT"/>
+                            <p:ajax update="doctype"/>
+                        </p:selectOneRadio>
+                        <h:outputText value="Title: " />
+                        <p:inputText value="#{documentController.title}" id="title" immediate="true" required="true">
+                            <p:ajax event="blur" update="out1" />
+                        </p:inputText>
+                        
+                        <h:outputText value="Description: " />
+                        <p:inputTextarea id="docDesc" value="#{documentController.desc}" style="width:300px;height:100px;" effectDuration="400">
+                            <p:ajax event="blur" update="docDesc" />
+                        </p:inputTextarea>
+                            
+                        <h:outputText value="Importance: " />
+                        <p:rating id="docRating" value="#{documentController.rank}">  
+                            <p:ajax event="rate" update="docRating" listener="#{documentController.handleRate}" />  
+                        </p:rating>
+                        <p:tooltip for="docRating" value="Rating sets the importance of the document. A higher rating will show higher in the list of documents." showEffect="fade" hideEffect="fade" />
+                        
+                </h:panelGrid>
+            </p:panel>    
+            <p:panel header="Upload Documents">
+                <p:fileUpload fileUploadListener="#{documentController.handleFileUpload}"
+                              mode="advanced"
+                              auto="true"
+                              update="messages" 
+                              multiple="true"
+                              sizeLimit="24000000" 
+                              allowTypes="/(\.|\/)(gif|jpe?g|png|pdf)$/"/>
+            </p:panel>
+        </h:form>
+    </h:body>
+
+
+</html>
+

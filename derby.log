@@ -1,0 +1,8 @@
+----------------------------------------------------------------
+2012-01-10 22:39:40.879 GMT:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.6.2.1 - (999685): instance a816c00e-0134-c9c6-dd04-000003cc2978 
+on database directory /home/alan/Dropbox/Projects/REM/Waylon  with class loader sun.misc.Launcher$AppClassLoader@6d6f0472 
+Loaded from file:/home/alan/Java/glassfish-3.1.1/javadb/lib/derby.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_26-b03
+Database Class Loader started - derby.database.classpath=''

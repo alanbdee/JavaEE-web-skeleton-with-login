@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <title><ui:insert name="title"/></title>
+        <h:outputStylesheet name="css/jsfcrud.css"/>
+        <h:outputStylesheet name="css/default.css"/>
+    </h:head>
+    <h:body>
+        <c:if test="#{loginController.authenticated}">
+            <div id="popupwindow"></div>
+            <div class="container_box">
+                <h:form>
+                    <p:growl id="messages" />
+                    <p:toolbar>
+                        <p:toolbarGroup align="left">
+                            <p:commandButton id="basic" value="New" icon="ui-icon-document" onclick="openNew.show();" type="button" /> 
+                            <p:commandButton type="button" value="Open" icon="ui-icon-folder-open" action="new.xhtml" ajax="false"/>
+
+                            <p:separator />
+                            <p:commandButton type="button" title="Save" icon="ui-icon-disk"/>
+                            <p:commandButton type="button" title="Delete" icon="ui-icon-trash"/>
+                            <p:commandButton type="button" title="Print" icon="ui-icon-print"/>
+                        </p:toolbarGroup>
+
+                        <p:toolbarGroup align="right">
+                            <p:menuButton value="Options">
+                                <p:menuitem value="Home" url="http://www.primefaces.org" />
+                                <p:menuitem value="ShowCase"
+                                            url="http://www.primefaces.org/showcase" />
+                                <p:menuitem value="TouchFaces"
+                                            url="http://www.primefaces.org/showcase/touch" />
+                                <p:menuitem value="Quit" actionListener="#{loginController.logout}" icon="ui-icon-close" ajax="false" />
+                            </p:menuButton>
+                        </p:toolbarGroup>
+
+                    </p:toolbar>
+                </h:form>
+                <p:dialog header="New Document" widgetVar="openNew" modal="true" draggable="true">  
+                    <ui:include src="/documents/new.xhtml"/>
+                </p:dialog>  
+            </div>
+            <div class="container_box">
+                <ui:insert name="body"/>
+            </div>
+            <p:dock>
+                <p:menuitem value="Documents" icon="#{resource['images/icons/documents.png']}" url="/faces/documents/main.xhtml" />
+                <p:menuitem value="Clients" icon="#{resource['images/icons/clients.png']}" url="#"/>
+                <p:menuitem value="Video" icon="#{resource['images/icons/video.png']}" url="#"/>
+                <p:menuitem value="Help" icon="#{resource['images/icons/help.png']}" url="#"/>
+                <p:menuitem value="Feedback" icon="#{resource['images/icons/feedback.png']}" url="#"/>
+                <p:menuitem value="Music" icon="/images/dock/music.png" url="#"/>
+                <p:menuitem value="Configuration" icon="#{resource['images/icons/configuration.png']}" url="#"/>
+            </p:dock>
+        </c:if>
+        <c:if test="#{!loginController.authenticated}">
+            <div class="container_box">
+                <h:form>
+                    <p:growl  />
+
+                    <p:panel header="Enter your passwords">  
+                        <h:panelGrid columns="2">  
+                            <h:outputText value="Username: " />  
+                            <p:inputText value="#{loginController.username}" label="Username"
+                                         requiredMessage="You must enter a username" 
+                                         validatorMessage="Your username cannot have any spaces and must be longer then 6 characters long.">
+                                <f:validateRegex pattern="[^\s]+" />
+                                <f:validateLength minimum="5" maximum="20" />
+                            </p:inputText>
+                            <h:outputText value="Password: " />  
+                            <p:password value="#{loginController.password}" minLength="6" feedback="false" 
+                                        requiredMessage="You must enter a password"
+                                        validatorMessage="Password must be longer then 6 characters">
+                                <f:validateRegex pattern="[^\s]+" />
+                                <f:validateLength minimum="5" maximum="20" />
+                            </p:password>  
+                            <h:commandButton action="#{loginController.authenticate}" value="Login" />
+                        </h:panelGrid>  
+                    </p:panel>  
+                </h:form>                    
+                <h:form>
+                    <h:commandLink action="/agents/agents/List" value="Show All Agents Items"/>
+                </h:form>
+            </div>
+        </c:if>
+        <h:form>
+            <p:contextMenu>
+                <p:menuitem value="Save" update="messages"
+                            actionListener="#{controlsController.save}" icon="ui-icon-disk"/>
+                <p:menuitem value="Update" update="messages"
+                            actionListener="#{controlsController.update}"
+                            icon="ui-icon-arrowrefresh-1-w"/>
+                <p:menuitem value="Delete" icon="ui-icon-close"
+                            actionListener="#{controlsController.delete}" ajax="false"/>
+                <p:menuitem value="Homepage" url="http://www.primefaces.org"
+                            icon="ui-icon-extlink"/>
+            </p:contextMenu>
+        </h:form>
+    </h:body>
+
+</html>
+
